@@ -1,871 +1,699 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chat Sign technology for every individual with hearing impairment">
-    <meta name="author" content="webthemez">
-    <title>ChatSign Technology</title>
-    <!-- core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/prettyPhoto.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chat Sign technology for every individual with hearing impairment">
+  <meta name="author" content="chatsign">
+  <title>ChatSign Technology</title>
+
+  <!-- core CSS -->
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="shortcut icon" href="images/logo/logo.png">
 </head>
 
-<body id="home">
 
-    <header id="header">
-        <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logo/logo.jpeg" alt="logo" width="50"
-                          height="50" class="navbar-brand-img"></a>
-                </div>
+<body>
 
-                <div class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li class="scroll active"><a href="#home">Home</a></li>
-                        <li class="scroll"><a href="#products">Products</a></li>
-                        <li class="scroll"><a href="#services">Application Scenarios</a></li>
-                        <li class="scroll"><a href="#about">About</a></li>
-                        <li class="scroll"><a href="#team">Team</a></li>
-                        <!-- <li class="scroll"><a href="#portfolio">Portfolio</a></li> -->
-                        <li class="scroll"><a href="#pricing">Pricing</a></li>
-                        <li class="scroll"><a href="#contact-us">Contact</a></li>
-                    </ul>
-                </div>
-            </div><!--/.container-->
-        </nav><!--/nav-->
-    </header><!--/header-->
+  <!-- nav bar  -->
+  <header id="header">
 
-    <section id="hero-banner2">
-        <video id="background-video" src="videos/invideo_chatsign.mp4" autoplay loop muted></video>
-        <div class="banner-inner2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
 
-                        <h2>ChatSign</h2>
-                        <p>Bridging communication gap</p>
-                        <a class="btn btn-primary btn-lg" href="#">Learn More</a>
+    <nav class="navbar navbar-expand-lg  navbarbg givesomepaddingtopandbottom">
+      <div class="container">
+        <a class="navbar-brand colorwhite" href="#">ChatSign</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 customnavul">
 
-                    </div>
-                </div>
-            </div>
+            <!-- nav item 1  -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#hero-banner">Home</a>
+            </li>
+
+            <!-- nav item 2  -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#prodbringhere">SignAvatar Station Pro</a></li>
+                <li><a class="dropdown-item" href="#prodbringhere">SignAvatar Station Lite</a></li>
+                <li><a class="dropdown-item" href="#prodbringhere">SignPodium</a></li>
+              </ul>
+            </li>
+
+            <!-- nav item 3  -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Use Cases
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#signpodium">SignPodium</a></li>
+                <li><a class="dropdown-item" href="#signavpro">SignAvatar Station Pro</a></li>
+                <li><a class="dropdown-item" href="#signavlite">SignAvatar Station Lite</a></li>
+              </ul>
+            </li>
+
+            <!-- nav item 4  -->
+            <li class="nav-item">
+              <a class="nav-link" href="#secabout">About</a>
+            </li>
+
+            <!-- nav item 5  -->
+            <li class="nav-item">
+              <a class="nav-link" href="#secteam">Team</a>
+            </li>
+
+            <!-- nav item 6  -->
+            <li class="nav-item">
+              <a class="nav-link" href="#seccontact">Contact</a>
+            </li>
+
+            <!-- nav item 4  -->
+          </ul>
+
         </div>
-        <button id="mute-btn" class="mute-button">🔇</button>
-    </section><!--/#main-slider-->
+      </div>
+    </nav>
+  </header>
 
 
-    <!-- products section  -->
-<!-- 
-    <section class="download-now" id="products">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Our Products</h2>
-
-                <h2 class="wow fadeInDown colornotsogray">1. Sign Avatar</h2>
-                <p class="wow fadeInDown">Translate speech in live event & media to signs and signs to speech,
-                    supporting multiple languages</p>
-            </div>
-
-            <div class="row">
-                <div class="col-md-5 wp1 animated fadeInUp">
-                    <img src="images/prod1.webp" class="product_img1" />
-                    <p style="font-size: 14px;">Pic showing an Avatar communicating in sign language</p>
-                </div>
-
-                <div class="col-md-7">
-                    <div class="row">
-                        <div class="features">
-
-                            <div class="col-md-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
-                                <div class="media service-box">
-                                    <div class="media-body">
-                                        <h4 class="media-heading">SignAvatar Digital</h4>
-                                        <p>Effortlessly translate text and audio into sign language using a customizable
-                                            avatar. <br />
-                                            Perfect for digital platforms like business websites and media channels,
-                                            fostering inclusivity and accessibility.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
-                                <div class="media service-box">
-                                    <div class="media-body">
-                                        <h4 class="media-heading">SignAvatar Station Lite</h4>
-                                        <p>A lightweight two-way sign-speech translation system featuring an avatar on a
-                                            tablet. <br />
-                                            Designed for small-scale businesses to create inclusive public spaces,
-                                            especially in receptions or waiting areas.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
-                                <div class="media service-box">
-                                    <div class="media-body">
-                                        <h4 class="media-heading">SignAvatar Station</h4>
-                                        <p>Experience high-speed speech-to-sign translation using a full-body screen
-                                            avatar. <br />
-                                            Ideal for impactful public presentations, physical advertising, and events
-                                            requiring real-time accessibility.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
-                                <div class="media service-box">
-                                    <div class="media-body">
-                                        <h4 class="media-heading">SignAvatar Station Pro</h4>
-                                        <p>Our most advanced system offering high-speed two-way sign-speech translation
-                                            with an avatar on a full-body screen. <br />
-                                            Tailored for large-scale conferences and events requiring seamless,
-                                            real-time communication.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+  <!-- section - 1: hero section  -->
+  <section id="hero-banner">
+    <div class="hero-content">
+      <h1>Breaking Down <br> Communication Barriers.</h1>
+      <p>Real-time Bidirectional Sign-speech AI Translation Hardware</p>
+    </div>
+  </section>
 
 
-            </div>
-            <br />
-
-            <div class="row">
-                <h2 class="wow fadeInDown colornotsogray">2. SignGlasses</h2>
-                <p class="wow fadeInDown">Glasses translating speech & surrounding sounds to signs and display to the
-                    user. Designed for individuals with hearing impairment</p>
-                <br />
-            </div>
-
-            <div class="row givesomepaddingbtm">
-                <div class="col-md-5 wp1 animated fadeInUp">
-                    <img src="images/prod2.webp" class="product_img1" />
-                </div>
-
-                <div class="col-md-7">
-                    <div class="row">
-                        <div class="features">
-
-                            <div class="col-md-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
-                                <div>
-                                    <i class="fa fa-file-text" aria-hidden="true"></i>
-                                </div>
-                                <div class="media service-box">
-                                    <div class="media-body">
-                                        <h4 class="media-heading">SignGlasses Digital</h4>
-                                        <p>Experience real-time translation of speech and surrounding sounds into sign
-                                            language. <br />
-                                            Designed as innovative wearable glasses, SignGlasses displays translations
-                                            to the user, offering an
-                                            empowering tool for individuals with hearing impairments to navigate their
-                                            world effortlessly.</p>
-                                    </div>
-                                </div>
-                            </div>
+  <!-- section - 2: products section  -->
+  <section id="secproducts">
+    <div class="container sectionContent">
+      <div class="custom-container">
 
 
-
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
+        <div class="section-header">
+          <p class="sectiontitlte" id="prodbringhere">Our Products</p>
         </div>
-    </section>
- -->
+        <p class="productDesc">
+          We develop a range of AI-powered assistive hardware products able to translate between sign languages and
+          spoken languages, supporting multiple sign and spoken languages, and targeting diverse sectors, including
+          public institutions, educational environments, corporate settings, and government agencies. All our devices
+          include a microphone, speaker, and camera to support the bidirectional communication, and can also be
+          connected to external input/output devices. We also provide customizable hardware formats to fit different
+          environments and user needs. For now, our primary advertising and outreach efforts focus on three flagship
+          products:
+        </p>
 
- 
-    <!-- application scenarios section  -->
+        <!-- carousel  -->
+        <div class="carouselslider">
 
-<!-- 
-    <section id="services">
-        <div class="container">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
 
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Application Scenarios</h2>
-                <p class="wow fadeInDown">A demonstration of where our technology is applicable </p>
-            </div>
-
-            <div>
-                <h1 class="wow fadeInDown colornotsogray">1. SignAvatar</h1>
-                <div class="features displayflex">
-
-                    <div class="wow fadeInUp dispItem" data-wow-duration="300ms" data-wow-delay="0ms">
-                        <div class="media service-box ">
-                            <div class="pull-left">
-                                <img src="images/sa_1.webp" class="product_img1" />
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">SignAvatar Pro</h4>
-                                <p>Delivers professional-grade accessibility for large events and conferences, enabling
-                                    accurate two-way communication and enhancing brand reputation with efficient,
-                                    long-term solutions.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="wow fadeInUp dispItem" data-wow-duration="300ms" data-wow-delay="100ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <img src="images/sa_2.webp" class="product_img1" />
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">SignAvatar Lite</h4>
-                                <p>Provides small businesses like cafes or shops with an affordable tablet-based two-way translation device, improving customer engagement and inclusivity without relying on live interpreters.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="wow fadeInUp dispItem" data-wow-duration="300ms" data-wow-delay="200ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <img src="images/sa_3.webp" class="product_img1" />
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">SignAvatar</h4>
-                                <p>Facilitates accessibility in large public spaces, such as museums and government offices, with a high-speed speech-to-sign translation system ideal for announcements and regulatory compliance.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="wow fadeInUp dispItem" data-wow-duration="300ms" data-wow-delay="300ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <img src="images/sa_4.webp" class="product_img1" />
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">SignAvatar Digital</h4>
-                                <p>Enhances web accessibility for businesses by translating text and audio into sign language through a customizable avatar plugin, boosting inclusivity, SEO, and brand reputation.</p>
-                            </div>
-                        </div>
-                    </div>
-
+              <!-- item 1  -->
+              <div class="swiper-slide">
+                <div class="productcard">
+                  <img src="images/products/prod1.png" alt="SignAvatar Station Pro">
+                  <div class="cardcontent">
+                    <p class="itmidicator">Product</p>
+                    <p class="itmTitle">SignAvatar Station Pro</p>
+                    <p class="itmDescrption">The SignAvatar Station Pro device features a full-body digital avatar on a
+                      large vertical screen.
+                    </p>
+                  </div>
 
                 </div>
-            </div>
-
-
-            <div>
-                <h1 class="wow fadeInDown colornotsogray">2. SignGlasses</h1>
-
-                <div class="features displayflex">
+              </div>
 
 
 
 
-                    <div class="wow fadeInUp dispItem" data-wow-duration="300ms" data-wow-delay="400ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <img src="images/sg_1.webp" class="product_img1" />
+              <!-- item 2 -->
+              <div class="swiper-slide">
 
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="wow fadeInUp dispItem" data-wow-duration="300ms" data-wow-delay="500ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <img src="images/sg_2.webp" class="product_img1" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="wow fadeInUp dispItem" data-wow-duration="300ms" data-wow-delay="400ms">
-                    </div>
-
-                    <div class="wow fadeInUp dispItem" data-wow-duration="300ms" data-wow-delay="500ms">
-                    </div>
-
-                    <div class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
-                        <h4 class="media-heading">Break barriers with SignGlasses</h4>
-                        <p>The ultimate solution for seamless communication in the workplace and everyday life. <br /> Translate speech and sounds into signs instantly, empowering you to navigate any setting with confidence and indepence. </p>
-
-                    </div>
-
-
-
-
-
+                <div class="productcard">
+                  <img src="images/products/prod2.png" alt="SignAvatar Station Pro">
+                  <div class="cardcontent">
+                    <p class="itmidicator">Product</p>
+                    <p class="itmTitle">SignAvatar Station Lite</p>
+                    <p class="itmDescrption">The SignAvatar Station Lite device is compact and tablet-based. It is
+                      optimized for smaller spaces and environments that require a portable and flexible solution.
+                    </p>
+                  </div>
 
                 </div>
+
+
+              </div>
+
+              <!-- item 3  -->
+              <div class="swiper-slide">
+
+                <div class="productcard">
+                  <img src="images/products/prod3.png" alt="SignPodium">
+                  <div class="cardcontent">
+                    <p class="itmidicator">Product</p>
+                    <p class="itmTitle">SignPodium</p>
+                    <p class="itmDescrption">SignPodium is a podium with a vertical display screen integrated into the
+                      stand (facing the audience), while the camera and microphone are positioned on the speaker's side
+                      to
+                      capture input.
+                    </p>
+                  </div>
+
+                </div>
+              </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+
         </div>
-    </section> 
--->
+      </div>
+    </div>
+  </section>
 
 
-    <!-- about us section  -->
-    <section id="about">
-        <div class="container">
+  <!-- section - 3: use cases  -->
+  <section id="secusecases" class="sectionchangemargintop">
+    <div class="container sectionContent">
+      <div class="custom-container">
 
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">About Us</h2>
-                <!-- <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus
-                    vitae massa <br> semper aliquam quis mattis quam.</p> -->
-            </div>
 
-            <div class="row">
-                <div class="col-sm-5 wow fadeInLeft">
-                    <img class="img-responsive" src="images/about_us.jpg" alt="">
-                </div>
-
-                <div class="col-sm-7 wow fadeInRight">
-                    <h3 class="column-title">Our Company</h3>
-
-                    <p>ChatSign is revolutionizing communication for the deaf and hard-of-hearing (DHH) communities by
-                        providing real-time sign language translation tools, allowing DHH individuals to talk in their
-                        primary language, and be included in public spaces. Our innovative solutions, SignAvatar and
-                        SignGlasses, and possible future products, bridge the gap between sign and spoken languages,
-                        empowering users to attend live events, engage with media, and complete everyday tasks
-                        effortlessly. Leveraging advanced AI, we are committed to fostering independence, inclusivity,
-                        and equality, enabling seamless interactions and creating a more connected world for everyone.
-                    </p> <br>
-                    <p>Join us in breaking down communication barriers.</p>
-
-                    <a class="btn btn-primary" href="#">Learn More</a>
-
-                </div>
-            </div>
+        <p class="itmidicator">Services</p>
+        <div class="section-header">
+          Use Cases
         </div>
-    </section><!--/#about-->
 
-    <section id="team">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Our Team</h2>
-                <!-- <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus
-                    vitae massa <br> semper aliquam quis mattis quam.</p> -->
-            </div>
-            <div class="row" data-anim-type="fade-in-up">
+        <!-- first use case  -->
+        <div class="useCaseItmRow" id="signpodium">
+          <div class="useCaseText">
+            <p class="useCaseTextHead">
+              SignPodium
+            </p>
+            <p class="useCaseTextDesc">
+              Delivers professional-grade accessibility for large events and conferences, enabling accurate two-way
+              communication and enhancing brand reputation.
+            </p>
+          </div>
+          <img src="images/usecases/use11.png" alt="SignPodium">
+          <img src="images/usecases/use12.png" alt="SignPodium">
 
-                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                    <div class="team-wrapper">
-                        <div class="team-inner" style="background-image: url('images/team/01.jpg')">
-                            <a href="https://www.linkedin.com/in/zhifei-li-6b988b253" target="_blank"> <i
-                                  class="fa fa-linkedin"></i></a>
-                        </div>
-                        <div class="description">
-                            <h3> Zhifei (Maggie) Li</h3>
-                            <h5> <strong> CEO </strong></h5>
-                            <p>
-                                Comp Sci & Math student at NYUAD, building creative assistive technology solutions
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                    <div class="team-wrapper">
-                        <div class="team-inner" style="background-image: url('images/team/02.jpg')">
-                            <a href="#" target="_blank"> <i class="fa fa-twitter"></i></a>
-                        </div>
-                        <div class="description">
-                            <h3> Yi Fang</h3>
-                            <h5> <strong> Founder </strong></h5>
-                            <p>
-                                ECE prof at NYUAD, leading AIR lab, devoted to developing assistive technology with AI
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                    <div class="team-wrapper">
-                        <div class="team-inner" style="background-image: url('images/team/03.jpg')">
-                            <a href="#" target="_blank"> <i class="fa fa-twitter"></i></a>
-                        </div>
-                        <div class="description">
-                            <h3> Micellir Faeny</h3>
-                            <h5> <strong> Developer &amp; Designer </strong></h5>
-                            <p>
-                                Pellentesque elementum dapibus convallis.
-                                Vivamus eget finibus.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                    <div class="team-wrapper">
-                        <div class="team-inner" style="background-image: url('images/team/04.jpg')">
-                            <a href="#" target="_blank"> <i class="fa fa-twitter"></i></a>
-                        </div>
-                        <div class="description">
-                            <h3> Kimten Lendy</h3>
-                            <h5> <strong> Developer &amp; Designer </strong></h5>
-                            <p>
-                                Pellentesque elementum dapibus convallis.
-                                Vivamus eget finibus.
-                            </p>
-                        </div>
-                    </div>
-                </div> -->
-
-            </div>
         </div>
-    </section>
 
-    <!-- portfolio section commented out for the moment  -->
+        <!-- second use case  -->
+        <div class="useCaseItmRow" id="signavpro">
 
-    <!-- 
-    <section id="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Our Works</h2>
-                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus
-                    vitae massa <br> semper aliquam quis mattis quam.</p>
+          <div class="useCaseText">
+            <p class="useCaseTextHead">
+              SignAvatar Station Pro
+            </p>
+            <p class="useCaseTextDesc">
+              Facilitates accessibility in large public spaces, such as airports and government offices, with a
+              high-speed
+              speech-to-sign translation system ideal for announcements and regulatory compliance.
+            </p>
+          </div>
+          <img src="images/usecases/use21.png" alt="SignPodium">
+          <img src="images/usecases/use22.png" alt="SignPodium">
+
+        </div>
+
+        <!-- third use case  -->
+        <div class="useCaseItmRow" id="signavlite">
+
+          <div class="useCaseText">
+            <p class="useCaseTextHead">
+              SignAvatar Station Lite
+            </p>
+            <p class="useCaseTextDesc">
+              Provides small businesses with a translation device, improving customer engagement and inclusivity without
+              relying on live interpreters.
+            </p>
+          </div>
+          <img src="images/usecases/use31.png" alt="SignPodium">
+          <img src="images/usecases/use32.png" alt="SignPodium">
+
+        </div>
+      </div>
+
+  </section>
+
+
+  <!-- section - 4: about us  -->
+  <section id="secabout" class="sectionchangemargintop">
+    <div class="container sectionContent">
+      <div class="custom-container">
+
+        <div class="section-header">
+          <p class="sectiontitlte">About Us</p>
+        </div>
+
+        <div class="leftrightdflex">
+          <img src="images/aboutus.jpg" alt="aboutus">
+          <div class="rightitems">
+            <p>
+              We are ChatSign Technology, a startup company focused on providing assistive technology for the deaf and
+              hard-of-hearing (DHH) community. Our products are AI-chip-powered devices that translate speech into sign
+              language and sign language into speech through a digital avatar. Our company is a spin-off from New York
+              University Abu Dhabi (NYUAD) and our AI models are developed in collaboration with the Embodied AI and
+              Robotics Lab at the university, with an exclusive license permitting commercialization filed.
+
+            </p>
+            <div class="buttondiv">
+              <button class="getstartedbtn">Get Started<div class="gradfill"></div></button>
             </div>
 
-            <div class="text-center">
-                <ul class="portfolio-filter">
-                    <li><a class="active" href="#" data-filter="*">All Works</a></li>
-                    <li><a href="#" data-filter=".designing">Designing</a></li>
-                    <li><a href="#" data-filter=".mobile">Mobile App</a></li>
-                    <li><a href="#" data-filter=".development">Development</a></li>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- section - 5: mission and vision  -->
+  <section id="secmissionvision" class="sectionchangemargintop">
+    <div class="container sectionContent">
+      <div class="custom-container">
+
+        <div class="section-header">
+          <p class="sectiontitlte">Mission & Vision</p>
+        </div>
+
+        <div class="leftrightdflex">
+          <div class="leftitems missionandvisiondiv">
+            <p class="missiontext">Mission</p>
+            <div class="whiteline"></div>
+            <p class="missiondescription">
+              To develop advanced AI chips and integrate them into accessible hardwares that enhance accessibility for
+              the deaf and hard-of-hearing community while providing scalable and commercially viable solutions for
+              businesses and institutions.
+            </p>
+          </div>
+          <div class="rightitems missionandvisiondiv">
+
+            <p class="missiontext">Vision</p>
+            <div class="whiteline"></div>
+            <p class="missiondescription">
+              To become a global leader in assistive technology by integrating advanced Application specific AI chip
+              (ASAIC) solutions into public and professional environments, promoting inclusivity while driving
+              sustainable business growth and technological innovation.
+            </p>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- section - 6: why us  -->
+  <section id="secwhyus" class="sectionchangemargintop">
+    <div class="container sectionContent">
+      <div class="custom-container">
+
+        <div class="section-header">
+          <p class="sectiontitlte">Why Choose Us</p>
+          <div class="keepitcenter">
+
+            <p class="itmDescrption tuncatedline">We adhere to the highest standards of quality in <br /> all our
+              products and services. </p>
+          </div>
+        </div>
+
+        <div class="leftrightdflex alignitemstop">
+          <div class="leftitems">
+
+            <!-- why us 1  -->
+            <div class="whyuscard">
+              <div class="whyuscard-header">
+                <div class="svgholderwhyus">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.89818 13.8668C7.52076 13.3594 6.80508 13.255 6.30303 13.6365C5.80099 14.0179 5.69773 14.7412 6.07515 15.2486L7.43174 17.0766C7.60265 17.3069 7.57772 17.6272 7.37833 17.8287L6.92257 18.2893C6.68401 18.5304 6.29591 18.5124 6.08227 18.2497L2.88486 14.3706V9.03042C2.88486 8.39349 2.37569 7.87891 1.74547 7.87891C1.11524 7.87891 0.606079 8.39349 0.606079 9.03042V16.8895C0.606079 17.2817 0.737821 17.6632 0.979942 17.969L4.68652 22.8018C4.86455 23.0357 4.98561 23.302 5.05682 23.5826C5.12091 23.8309 5.34523 24.0001 5.60159 24.0001H10.2909C10.6042 24.0001 10.8606 23.741 10.8606 23.4243V19.394C10.8606 18.3972 10.5401 17.4293 9.94908 16.6304L7.89818 13.8668ZM22.2545 7.87891C21.6243 7.87891 21.1151 8.39349 21.1151 9.03042V14.3706L17.9177 18.2497C17.7041 18.5088 17.3124 18.5268 17.0774 18.2893L16.6216 17.8287C16.4222 17.6272 16.3973 17.3069 16.5682 17.0766L17.9248 15.2486C18.3022 14.7412 18.199 14.0179 17.6969 13.6365C17.1949 13.255 16.4792 13.3594 16.1018 13.8668L14.0509 16.6304C13.4598 17.4293 13.1394 18.3972 13.1394 19.394V23.4243C13.1394 23.741 13.3957 24.0001 13.7091 24.0001H18.3984C18.6512 24.0001 18.8791 23.8309 18.9431 23.5826C19.0144 23.302 19.1354 23.0357 19.3134 22.8018L23.02 17.969C23.2621 17.6632 23.3939 17.2817 23.3939 16.8895V9.03042C23.3939 8.39349 22.8847 7.87891 22.2545 7.87891Z"
+                      fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M15.6556 2.16778C16.6805 3.23976 16.6805 4.97782 15.6556 6.04983L11.8788 10.0001L8.10205 6.04983C7.07715 4.97782 7.07715 3.23976 8.10205 2.16776C9.05299 1.17316 10.5521 1.10135 11.5822 1.95241C11.6634 2.01962 11.7407 2.09153 11.8136 2.16776L11.8788 2.236L11.944 2.16778C12.018 2.09041 12.0953 2.01863 12.1754 1.95241C13.2055 1.10135 14.7046 1.17314 15.6556 2.16778ZM8.75915 2.79599C9.42603 2.09847 10.4896 2.09847 11.1565 2.79599L11.8788 3.55152L12.6011 2.79601C13.268 2.09849 14.3316 2.09849 14.9985 2.79601C15.6874 3.51656 15.6874 4.70102 14.9985 5.4216L14.9332 5.48982L11.8788 8.6846L8.75915 5.4216C8.07024 4.70102 8.07024 3.51656 8.75915 2.79599Z"
+                      fill="white" />
+                  </svg>
+                </div>
+                <span class="itmTitle">Inclusivity & Accessibility</span>
+              </div>
+              <div class="whyuscardbody">
+                <ul>
+                  <li> Enables public services to be accessible to everyone, allowing deaf individuals to engage in
+                    education, employment, and social interactions.</li>
+                  <li> Strengthens brand image for organizations by demonstrating a commitment to inclusivity and
+                    accessibility.</li>
                 </ul>
+              </div>
             </div>
 
-            <div class="portfolio-items">
-                <div class="portfolio-item designing">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/01.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Project Name</h3>
-                            Some description..
-                            <a class="preview" href="images/portfolio/01.jpg" rel="prettyPhoto"><i
-                                  class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
+            <!-- why us 2  -->
+            <div class="whyuscard">
+              <div class="whyuscard-header">
+                <div class="svgholderwhyus">
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M2.33337 14L5.25004 11.0833L11.0834 16.9167L22.75 5.25L25.6667 8.16667L11.0834 22.75L2.33337 14Z"
+                      fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                 </div>
-
-                <div class="portfolio-item mobile development">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/02.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Project Name</h3>
-                            Some description..
-                            <a class="preview" href="images/portfolio/02.jpg" rel="prettyPhoto"><i
-                                  class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-item designing">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/03.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Project Name</h3>
-                            Some description..
-                            <a class="preview" href="images/portfolio/03.jpg" rel="prettyPhoto"><i
-                                  class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-item mobile">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/04.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Project Name</h3>
-                            Some description..
-                            <a class="preview" href="images/portfolio/04.jpg" rel="prettyPhoto"><i
-                                  class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-item designing development">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/05.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Project Name</h3>
-                            Some description..
-                            <a class="preview" href="images/portfolio/05.jpg" rel="prettyPhoto"><i
-                                  class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-item mobile">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/06.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Project Name</h3>
-                            Some description..
-                            <a class="preview" href="images/portfolio/06.jpg" rel="prettyPhoto"><i
-                                  class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-item designing development">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/07.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Project Name</h3>
-                            Some description..
-                            <a class="preview" href="images/portfolio/07.jpg" rel="prettyPhoto"><i
-                                  class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-item mobile">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/08.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Project Name</h3>
-                            Some description..
-                            <a class="preview" href="images/portfolio/08.jpg" rel="prettyPhoto"><i
-                                  class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div>
+                <span class="itmTitle">Privacy</span>
+              </div>
+              <div class="whyuscardbody">
+                <ul>
+                  <li> Operates offline, ensuring that data remains local and secure.</li>
+                  <li> Does not rely on cloud storage or third-party APIs, reducing the risk of data breaches.</li>
+                </ul>
+              </div>
             </div>
+          </div>
+          <div class="rightitems">
+
+            <!-- why us 3  -->
+            <div class="whyuscard">
+              <div class="whyuscard-header">
+                <div class="svgholderwhyus">
+                  <svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M21.5365 13.0369C21.2698 13.0369 21.0403 12.948 20.8479 12.7702C20.6555 12.5925 20.5394 12.3752 20.4995 12.1184L20.3661 11.1406C20.2377 11.0912 20.1168 11.032 20.0035 10.9628C19.8901 10.8937 19.7789 10.8196 19.6698 10.7406L18.7513 11.1258C18.5044 11.2344 18.2575 11.2443 18.0106 11.1554C17.7637 11.0665 17.5711 10.9085 17.4328 10.6813L16.7365 9.46653C16.5982 9.23937 16.5587 8.9974 16.618 8.74061C16.6772 8.48382 16.8106 8.27147 17.018 8.10357L17.8032 7.51098C17.7933 7.44184 17.7883 7.37508 17.7883 7.31068V6.91068C17.7883 6.84668 17.7933 6.78012 17.8032 6.71098L17.018 6.11839C16.8106 5.95049 16.6772 5.73814 16.618 5.48135C16.5587 5.22456 16.5982 4.98259 16.7365 4.75543L17.4328 3.54061C17.5711 3.31345 17.7637 3.15543 18.0106 3.06654C18.2575 2.97765 18.5044 2.98753 18.7513 3.09617L19.6698 3.48135C19.7785 3.40234 19.892 3.32827 20.0106 3.25913C20.1291 3.19 20.2476 3.13074 20.3661 3.08135L20.4995 2.10358C20.539 1.84679 20.6551 1.6295 20.8479 1.45173C21.0407 1.27395 21.2702 1.18506 21.5365 1.18506H22.9291C23.1957 1.18506 23.4255 1.27395 23.6183 1.45173C23.8111 1.6295 23.927 1.84679 23.9661 2.10358L24.0995 3.08135C24.2278 3.13074 24.3489 3.19 24.4627 3.25913C24.5765 3.32827 24.6875 3.40234 24.7957 3.48135L25.7143 3.09617C25.9612 2.98753 26.2081 2.97765 26.455 3.06654C26.7019 3.15543 26.8945 3.31345 27.0328 3.54061L27.7291 4.75543C27.8673 4.98259 27.9069 5.22456 27.8476 5.48135C27.7883 5.73814 27.655 5.95049 27.4476 6.11839L26.6624 6.71098C26.6723 6.78012 26.6772 6.84688 26.6772 6.91128V7.31068C26.6772 7.37508 26.6674 7.44184 26.6476 7.51098L27.4328 8.10357C27.6402 8.27147 27.7735 8.48382 27.8328 8.74061C27.892 8.9974 27.8525 9.23937 27.7143 9.46653L27.0032 10.6813C26.8649 10.9085 26.6723 11.0665 26.4254 11.1554C26.1785 11.2443 25.9315 11.2344 25.6846 11.1258L24.7957 10.7406C24.6871 10.8196 24.5735 10.8937 24.455 10.9628C24.3365 11.032 24.218 11.0912 24.0995 11.1406L23.9661 12.1184C23.9266 12.3752 23.8107 12.5925 23.6183 12.7702C23.4259 12.948 23.1961 13.0369 22.9291 13.0369H21.5365ZM22.2624 9.18505C22.8353 9.18505 23.3241 8.98258 23.7291 8.57764C24.134 8.17271 24.3365 7.68382 24.3365 7.11098C24.3365 6.53814 24.134 6.04925 23.7291 5.64431C23.3241 5.23938 22.8353 5.03691 22.2624 5.03691C21.6797 5.03691 21.1882 5.23938 20.788 5.64431C20.3878 6.04925 20.1879 6.53814 20.1883 7.11098C20.1887 7.68382 20.3888 8.17271 20.7886 8.57764C21.1884 8.98258 21.6797 9.18505 22.2624 9.18505Z"
+                      fill="white" />
+                    <path
+                      d="M11.2326 15.1665C10.1497 15.1665 9.11104 15.5967 8.34527 16.3625C7.5795 17.1283 7.14929 18.1669 7.14929 19.2498C7.14929 20.6382 7.84346 21.8573 8.89929 22.5982V23.9165C8.89929 24.0712 8.96075 24.2196 9.07015 24.329C9.17954 24.4384 9.32791 24.4998 9.48262 24.4998H12.9826C13.1373 24.4998 13.2857 24.4384 13.3951 24.329C13.5045 24.2196 13.566 24.0712 13.566 23.9165V22.5982C14.6218 21.8573 15.316 20.6382 15.316 19.2498C15.316 18.1669 14.8857 17.1283 14.12 16.3625C13.3542 15.5967 12.3156 15.1665 11.2326 15.1665ZM9.48262 26.2498C9.48262 26.4045 9.54408 26.5529 9.65348 26.6623C9.76287 26.7717 9.91125 26.8332 10.066 26.8332H12.3993C12.554 26.8332 12.7024 26.7717 12.8118 26.6623C12.9212 26.5529 12.9826 26.4045 12.9826 26.2498V25.6665H9.48262V26.2498Z"
+                      fill="white" />
+                    <path
+                      d="M9.96104 5.63677C8.8634 5.68144 7.77007 6.09165 6.90224 6.90619C5.37944 8.33547 5.02377 10.5357 5.85973 12.332L6.87235 11.8621C6.55289 11.1762 6.45808 10.4071 6.60143 9.66419C6.74478 8.92131 7.11897 8.24263 7.67067 7.7249C8.30926 7.12552 9.11349 6.81418 9.92524 6.76681L9.85244 9.06499L12.7998 6.29864L10.0334 3.35129L9.96104 5.63677Z"
+                      fill="white" />
+                    <path
+                      d="M23.8217 22.6394C24.9186 22.7307 26.0564 22.458 27.0201 21.7555C28.711 20.5227 29.3367 18.3789 28.7277 16.4894L27.6627 16.8315C27.8955 17.5529 27.8947 18.3295 27.6603 19.0504C27.4259 19.7713 26.9699 20.3998 26.3573 20.8464C25.6482 21.3634 24.81 21.5735 23.997 21.5202L24.3537 19.2441L21.081 21.6302L23.467 24.9029L23.8217 22.6394Z"
+                      fill="white" />
+                  </svg>
+
+
+                </div>
+                <span class="itmTitle">Efficiency</span>
+              </div>
+              <div class="whyuscardbody">
+                <ul>
+                  <li> Eliminates the need for hiring interpreters, reducing labor costs.</li>
+                  <li> Is available 24/7 for continuous communication support.</li>
+                  <li> Provides real-time translation to streamline interactions.</li>
+                  <li> Is easy to install and set up for seamless integration into existing infrastructure.</li>
+                  <li> Offers adaptable hardware configurations to suit various environments and user needs.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
         </div>
-    </section>
-    -->
 
 
-    <!-- business statistics commented out for now.  -->
+      </div>
 
-    <!-- 
-    <section id="business-stats">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Business Stats</h2>
-                <p class="wow fadeInDown">Statistics</p>
-            </div>
+    </div>
+  </section>
 
-            <div class="row text-center">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
-                        <div class="business-stats" data-digit="6850" data-duration="1000"></div>
-                        <strong>Clients</strong>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
-                        <div class="business-stats" data-digit="1465" data-duration="1000"></div>
-                        <strong>Completed</strong>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
-                        <div class="business-stats" data-digit="4325" data-duration="1000"></div>
-                        <strong>In Progress</strong>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
-                        <div class="business-stats" data-digit="2568" data-duration="1000"></div>
-                        <strong>Customer Satisfaction</strong>
-                    </div>
-                </div>
-            </div>
+
+  <!-- section - 6: Our team  -->
+  <section id="secteam" class="sectionchangemargintop">
+    <div class="container sectionContent">
+      <div class="custom-container">
+
+        <div class="section-header">
+          Our Team
         </div>
-    </section>
-    -->
+
+        <div class="ourteamlist">
+
+          <!-- team 1  -->
+          <div class="ourteamcard">
+            <p class="ourteamtitle">
+              Zhifei (Maggie) Li
+            </p>
+            <p class="ourteamdescription">
+              CEO, Co-Founder
+            </p>
+            <div class="ourteamsocials">
+
+              <!-- <div class="fbholder">
+                <a href="facebook.com" target="_blank" rel="noopener noreferrer">
+                  <svg width="36" height="36" viewBox="0 0 36 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="1.44434" width="34.1113" height="36.1111" rx="17.0557" stroke="#0D0D0D" />
+                    <path
+                      d="M21.4927 20.5687L21.9722 17.4734H19.0183V15.4615C19.0183 14.6151 19.4307 13.7881 20.7494 13.7881H22.1113V11.1523C21.3182 11.0238 20.5168 10.9543 19.7136 10.9443C17.2823 10.9443 15.695 12.4291 15.695 15.1133V17.4734H13V20.5687H15.695V28.0554H19.0183V20.5687H21.4927Z"
+                      fill="#0D0D0D" />
+                  </svg>
+                </a>
+              </div>
+
+              <div class="instaholder">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.574219" y="1.44434" width="34" height="34" rx="17" stroke="#0D0D0D" />
+                  <path
+                    d="M23.5799 27.1148C24.81 26.6395 25.7824 25.6671 26.2577 24.437C26.4826 23.8544 26.6401 23.1895 26.6829 22.2171C26.693 21.9893 26.7009 21.7981 26.7082 21.6063V15.109C26.7031 14.9734 26.6975 14.8323 26.6902 14.6737C26.6474 13.7012 26.49 13.033 26.265 12.4537C26.0327 11.839 25.675 11.2884 25.207 10.8311C24.7492 10.366 24.1952 10.0049 23.5872 9.77652C23.0045 9.55154 22.3397 9.39406 21.3673 9.35132C20.3875 9.30463 20.0765 9.29395 17.5922 9.29395C15.1079 9.29395 14.7963 9.30463 13.8205 9.34738C12.848 9.39012 12.1798 9.54761 11.6005 9.77258C10.9858 10.0049 10.4352 10.3626 9.97733 10.8311C9.51275 11.2889 9.15167 11.8429 8.92276 12.4504C8.69778 13.033 8.5403 13.6978 8.49755 14.6703C8.45087 15.6501 8.44019 15.9611 8.44019 18.4459C8.44019 20.9308 8.45087 21.2418 8.49362 22.2177C8.53636 23.1901 8.69384 23.8589 8.91938 24.4376C9.15167 25.0523 9.51275 25.603 9.97733 26.0608C10.4352 26.5254 10.9892 26.887 11.5972 27.1154C12.1798 27.3403 12.8446 27.4978 13.8171 27.5406C14.7929 27.5839 15.104 27.5946 17.5888 27.5946C20.0737 27.5946 20.3841 27.5839 21.3605 27.5406C22.333 27.4978 23.0006 27.3398 23.5799 27.1148ZM17.5956 25.9494C15.1535 25.9494 14.8604 25.9387 13.8987 25.896C13.0049 25.8566 12.5224 25.7065 12.2006 25.5816C11.8041 25.4348 11.443 25.2025 11.1495 24.8988C10.8457 24.6018 10.6129 24.2447 10.4667 23.8476C10.3418 23.5259 10.1916 23.0394 10.1522 22.1496C10.1095 21.1845 10.0988 20.8948 10.0988 18.4527C10.0988 16.0106 10.1095 15.7176 10.1522 14.7563C10.1916 13.8626 10.3418 13.3801 10.4667 13.0583C10.6134 12.6613 10.8457 12.3002 11.1534 12.0071C11.4498 11.7034 11.8075 11.4711 12.204 11.3243C12.5257 11.1995 13.0122 11.0493 13.902 11.0099C14.8672 10.9672 15.1568 10.9565 17.5984 10.9565C20.0399 10.9565 20.3335 10.9672 21.2953 11.0099C22.189 11.0493 22.6716 11.1995 22.9933 11.3243C23.3898 11.4711 23.7509 11.7034 24.0439 12.0071C24.3476 12.3041 24.5805 12.6613 24.7267 13.0583C24.8516 13.3801 25.0017 13.866 25.0411 14.7563C25.0839 15.7215 25.0946 16.0111 25.0946 18.4527C25.0946 20.8942 25.0839 21.1805 25.0411 22.1457C25.0017 23.0394 24.8516 23.5219 24.7267 23.8437C24.4191 24.6412 23.7863 25.2739 22.9893 25.581C22.6676 25.7059 22.1817 25.8561 21.2913 25.8954C20.3262 25.9382 20.0371 25.9494 17.5956 25.9494Z"
+                    fill="#0D0D0D" />
+                  <path
+                    d="M17.5924 13.744C14.9967 13.744 12.891 15.8498 12.891 18.4454C12.891 21.0411 14.9967 23.1468 17.5924 23.1468C20.188 23.1468 22.2932 21.0411 22.2932 18.4454C22.2932 15.8498 20.1875 13.744 17.5924 13.744ZM17.5924 21.4944C15.9084 21.4944 14.5428 20.1288 14.5428 18.4449C14.5428 16.7609 15.9084 15.3953 17.5924 15.3953C19.2763 15.3953 20.6419 16.7609 20.6419 18.4449C20.6419 20.1288 19.2763 21.4944 17.5924 21.4944Z"
+                    fill="#0D0D0D" />
+                  <path
+                    d="M23.5755 13.5581C23.5755 12.9518 23.0839 12.4608 22.4776 12.4608C21.8713 12.4608 21.3803 12.9524 21.3803 13.5581C21.3803 14.1639 21.8719 14.6554 22.4776 14.6554C23.0834 14.6554 23.5755 14.1644 23.5755 13.5581Z"
+                    fill="#0D0D0D" />
+                </svg>
+
+              </div>
+
+              <div class="twitterholder">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.537109" y="1.44434" width="34" height="34" rx="17" stroke="#0D0D0D" />
+                  <g clip-path="url(#clip0_15_7874)">
+                    <path
+                      d="M18.9644 17.2965L24.5447 10.9443H23.2228L18.3754 16.4587L14.5066 10.9443H10.0433L15.8949 19.2839L10.0433 25.9443H11.3652L16.4809 20.1197L20.5675 25.9443H25.0308M11.8423 11.9205H13.8731L23.2218 25.0161H21.1905"
+                      fill="#0D0D0D" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_15_7874">
+                      <rect width="14.9875" height="15" fill="white" transform="translate(10.0433 10.9443)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+
+              </div> -->
+
+              <div class="linkedinholder">
+                <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer">
+                  <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="1.44434" width="34" height="34" rx="17" stroke="#0D0D0D" />
+                    <path
+                      d="M13.4322 25.5722V15.9536H10.238V25.5722H13.4322ZM11.8357 14.6406C12.9494 14.6406 13.6427 13.902 13.6427 12.9789C13.6219 12.0349 12.9494 11.3169 11.8569 11.3169C10.7637 11.3169 10.0497 12.0349 10.0497 12.9789C10.0497 13.9019 10.7428 14.6405 11.8148 14.6405L11.8357 14.6406ZM15.2002 25.5722H18.3942V20.2013C18.3942 19.9142 18.4151 19.6264 18.4994 19.4213C18.7302 18.8467 19.2558 18.2519 20.1384 18.2519C21.2939 18.2519 21.7565 19.1339 21.7565 20.427V25.5722H24.9504V20.0572C24.9504 17.1029 23.3748 15.7281 21.2733 15.7281C19.5503 15.7281 18.7936 16.6919 18.3732 17.3484H18.3945V15.9539H15.2004C15.2421 16.8563 15.2002 25.5722 15.2002 25.5722Z"
+                      fill="#0D0D0D" />
+                  </svg>
+                </a>
+
+              </div>
 
 
-    <!-- pricing commented out for now -->
-
-    <!-- 
-    <section id="pricing">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Pricing</h2>
-                <p class="wow fadeInDown">Please contact us through the form to book a demo and also know about the pricing.</p>
             </div>
+            <img src="images/team/team01.jpg" alt="Zhifei" />
 
-             <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="0ms">
-                        <ul class="pricing">
-                            <li class="plan-header">
-                                <div class="price-duration">
-                                    <span class="price">
-                                        $45
-                                    </span>
-                                    <span class="duration">
-                                        per month
-                                    </span>
-                                </div>
+          </div>
 
-                                <div class="plan-name">
-                                    Basic
-                                </div>
-                            </li>
-                            <li><strong>1</strong> DOMAIN</li>
-                            <li><strong>100GB</strong> DISK SPACE</li>
-                            <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-                            <li>SHARED SSL CERTIFICATE</li>
-                            <li><strong>10</strong> EMAIL ADDRESS</li>
-                            <li><strong>24/7</strong> SUPPORT</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="200ms">
-                        <ul class="pricing featured">
-                            <li class="plan-header">
-                                <div class="price-duration">
-                                    <span class="price">
-                                        $85
-                                    </span>
-                                    <span class="duration">
-                                        per month
-                                    </span>
-                                </div>
+          <!-- team 2  -->
+          <div class="ourteamcard">
+            <p class="ourteamtitle">
+              Yi Fang
+            </p>
+            <p class="ourteamdescription">
+              Founder
+            </p>
+            <div class="ourteamsocials displayinvs">
+              <div class="fbholder">
+                <svg width="36" height="36" viewBox="0 0 36 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.5" y="1.44434" width="34.1113" height="36.1111" rx="17.0557" stroke="#0D0D0D" />
+                  <path
+                    d="M21.4927 20.5687L21.9722 17.4734H19.0183V15.4615C19.0183 14.6151 19.4307 13.7881 20.7494 13.7881H22.1113V11.1523C21.3182 11.0238 20.5168 10.9543 19.7136 10.9443C17.2823 10.9443 15.695 12.4291 15.695 15.1133V17.4734H13V20.5687H15.695V28.0554H19.0183V20.5687H21.4927Z"
+                    fill="#0D0D0D" />
+                </svg>
+              </div>
 
-                                <div class="plan-name">
-                                    Business
-                                </div>
-                            </li>
-                            <li><strong>5</strong> DOMAIN</li>
-                            <li><strong>500GB</strong> DISK SPACE</li>
-                            <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-                            <li>SHARED SSL CERTIFICATE</li>
-                            <li><strong>30</strong> EMAIL ADDRESS</li>
-                            <li><strong>24/7</strong> SUPPORT</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="400ms">
-                        <ul class="pricing">
-                            <li class="plan-header">
-                                <div class="price-duration">
-                                    <span class="price">
-                                        $125
-                                    </span>
-                                    <span class="duration">
-                                        per month
-                                    </span>
-                                </div>
+              <div class="instaholder">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.574219" y="1.44434" width="34" height="34" rx="17" stroke="#0D0D0D" />
+                  <path
+                    d="M23.5799 27.1148C24.81 26.6395 25.7824 25.6671 26.2577 24.437C26.4826 23.8544 26.6401 23.1895 26.6829 22.2171C26.693 21.9893 26.7009 21.7981 26.7082 21.6063V15.109C26.7031 14.9734 26.6975 14.8323 26.6902 14.6737C26.6474 13.7012 26.49 13.033 26.265 12.4537C26.0327 11.839 25.675 11.2884 25.207 10.8311C24.7492 10.366 24.1952 10.0049 23.5872 9.77652C23.0045 9.55154 22.3397 9.39406 21.3673 9.35132C20.3875 9.30463 20.0765 9.29395 17.5922 9.29395C15.1079 9.29395 14.7963 9.30463 13.8205 9.34738C12.848 9.39012 12.1798 9.54761 11.6005 9.77258C10.9858 10.0049 10.4352 10.3626 9.97733 10.8311C9.51275 11.2889 9.15167 11.8429 8.92276 12.4504C8.69778 13.033 8.5403 13.6978 8.49755 14.6703C8.45087 15.6501 8.44019 15.9611 8.44019 18.4459C8.44019 20.9308 8.45087 21.2418 8.49362 22.2177C8.53636 23.1901 8.69384 23.8589 8.91938 24.4376C9.15167 25.0523 9.51275 25.603 9.97733 26.0608C10.4352 26.5254 10.9892 26.887 11.5972 27.1154C12.1798 27.3403 12.8446 27.4978 13.8171 27.5406C14.7929 27.5839 15.104 27.5946 17.5888 27.5946C20.0737 27.5946 20.3841 27.5839 21.3605 27.5406C22.333 27.4978 23.0006 27.3398 23.5799 27.1148ZM17.5956 25.9494C15.1535 25.9494 14.8604 25.9387 13.8987 25.896C13.0049 25.8566 12.5224 25.7065 12.2006 25.5816C11.8041 25.4348 11.443 25.2025 11.1495 24.8988C10.8457 24.6018 10.6129 24.2447 10.4667 23.8476C10.3418 23.5259 10.1916 23.0394 10.1522 22.1496C10.1095 21.1845 10.0988 20.8948 10.0988 18.4527C10.0988 16.0106 10.1095 15.7176 10.1522 14.7563C10.1916 13.8626 10.3418 13.3801 10.4667 13.0583C10.6134 12.6613 10.8457 12.3002 11.1534 12.0071C11.4498 11.7034 11.8075 11.4711 12.204 11.3243C12.5257 11.1995 13.0122 11.0493 13.902 11.0099C14.8672 10.9672 15.1568 10.9565 17.5984 10.9565C20.0399 10.9565 20.3335 10.9672 21.2953 11.0099C22.189 11.0493 22.6716 11.1995 22.9933 11.3243C23.3898 11.4711 23.7509 11.7034 24.0439 12.0071C24.3476 12.3041 24.5805 12.6613 24.7267 13.0583C24.8516 13.3801 25.0017 13.866 25.0411 14.7563C25.0839 15.7215 25.0946 16.0111 25.0946 18.4527C25.0946 20.8942 25.0839 21.1805 25.0411 22.1457C25.0017 23.0394 24.8516 23.5219 24.7267 23.8437C24.4191 24.6412 23.7863 25.2739 22.9893 25.581C22.6676 25.7059 22.1817 25.8561 21.2913 25.8954C20.3262 25.9382 20.0371 25.9494 17.5956 25.9494Z"
+                    fill="#0D0D0D" />
+                  <path
+                    d="M17.5924 13.744C14.9967 13.744 12.891 15.8498 12.891 18.4454C12.891 21.0411 14.9967 23.1468 17.5924 23.1468C20.188 23.1468 22.2932 21.0411 22.2932 18.4454C22.2932 15.8498 20.1875 13.744 17.5924 13.744ZM17.5924 21.4944C15.9084 21.4944 14.5428 20.1288 14.5428 18.4449C14.5428 16.7609 15.9084 15.3953 17.5924 15.3953C19.2763 15.3953 20.6419 16.7609 20.6419 18.4449C20.6419 20.1288 19.2763 21.4944 17.5924 21.4944Z"
+                    fill="#0D0D0D" />
+                  <path
+                    d="M23.5755 13.5581C23.5755 12.9518 23.0839 12.4608 22.4776 12.4608C21.8713 12.4608 21.3803 12.9524 21.3803 13.5581C21.3803 14.1639 21.8719 14.6554 22.4776 14.6554C23.0834 14.6554 23.5755 14.1644 23.5755 13.5581Z"
+                    fill="#0D0D0D" />
+                </svg>
 
-                                <div class="plan-name">
-                                    Professional
-                                </div>
-                            </li>
-                            <li><strong>10</strong> DOMAIN</li>
-                            <li><strong>2GB</strong> DISK SPACE</li>
-                            <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-                            <li>SHARED SSL CERTIFICATE</li>
-                            <li><strong>50</strong> EMAIL ADDRESS</li>
-                            <li><strong>24/7</strong> SUPPORT</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="600ms">
-                        <ul class="pricing">
-                            <li class="plan-header">
-                                <div class="price-duration">
-                                    <span class="price">
-                                        $185
-                                    </span>
-                                    <span class="duration">
-                                        per month
-                                    </span>
-                                </div>
+              </div>
 
-                                <div class="plan-name">
-                                    Extended
-                                </div>
-                            </li>
-                            <li><strong>15</strong> DOMAIN</li>
-                            <li><strong>10GB</strong> DISK SPACE</li>
-                            <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-                            <li>SHARED SSL CERTIFICATE</li>
-                            <li><strong>100</strong> EMAIL ADDRESS</li>
-                            <li><strong>24/7</strong> SUPPORT</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div> 
+              <div class="linkedinholder">
+                <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.5" y="1.44434" width="34" height="34" rx="17" stroke="#0D0D0D" />
+                  <path
+                    d="M13.4322 25.5722V15.9536H10.238V25.5722H13.4322ZM11.8357 14.6406C12.9494 14.6406 13.6427 13.902 13.6427 12.9789C13.6219 12.0349 12.9494 11.3169 11.8569 11.3169C10.7637 11.3169 10.0497 12.0349 10.0497 12.9789C10.0497 13.9019 10.7428 14.6405 11.8148 14.6405L11.8357 14.6406ZM15.2002 25.5722H18.3942V20.2013C18.3942 19.9142 18.4151 19.6264 18.4994 19.4213C18.7302 18.8467 19.2558 18.2519 20.1384 18.2519C21.2939 18.2519 21.7565 19.1339 21.7565 20.427V25.5722H24.9504V20.0572C24.9504 17.1029 23.3748 15.7281 21.2733 15.7281C19.5503 15.7281 18.7936 16.6919 18.3732 17.3484H18.3945V15.9539H15.2004C15.2421 16.8563 15.2002 25.5722 15.2002 25.5722Z"
+                    fill="#0D0D0D" />
+                </svg>
+
+              </div>
+
+            </div>
+            <img src="images/team/team02.jpg" alt="Zhifei" />
+
+          </div>
+
         </div>
-    </section>
-    -->
 
+        <div class="finalwordsfromteam">
+          <div class="finalwordsleftText">
+            Let's make communication easy to everyone together
+          </div>
+          <div class="finalwordsrightText">
+            Let's work together to turn your vision into reality. Contact us today to take the first step towards
+            creating something amazing together.
+          </div>
 
-    <!-- testimonial commented out for now  -->
-
-    <!-- 
-    <section class="testimonial-area" id="testimonial">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Testimonial</h2>
-                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus
-                    vitae massa <br> semper aliquam quis mattis quam.</p>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="single-testimonial animate_fade_in" style="opacity: 1; right: 0px;">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <blockquote>Sontrary to popular belief, Lorem Ipsuis no simply random text. It has roots
-                                    in a piece of classical Layears old. belief, Lorem Ipsuis not simply</blockquote>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <h5>John Bond</h5>
-                                <h6>Lorem Ipsuis simply</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="single-testimonial animate_fade_in" style="opacity: 1; right: 0px;">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <blockquote>Tontrary to popular belief, Lorem Ipsuis no simply random text. It has roots
-                                    in a piece of classical Layears old. belief, Lorem Ipsuis not simply</blockquote>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <h5>John Bond</h5>
-                                <h6>Lorem Ipsuis simply</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="single-testimonial animate_fade_in" style="opacity: 1; right: 0px;">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <blockquote>Aontrary to popular belief, Lorem Ipsuis no simply random text. It has roots
-                                    in a piece of classical Layears old. belief, Lorem Ipsuis not simply</blockquote>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <h5>John Bond</h5>
-                                <h6>Lorem Ipsuis simply</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-    </section>
-    -->
+      </div>
+    </div>
+
+  </section>
 
 
-    <section id="contact-us">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Contact Us</h2>
-                <p class="wow fadeInDown">Please contact us through the form to book a demo and also know about the
-                    pricing.</p>
-            </div>
+
+  <!-- section - 7: contact us  -->
+  <!-- <section id="" class="sectionchangemargintop">
+    seccontact
+  </section> -->
+  <div id="seccontact"></div>
+
+
+
+  <!-- footer  -->
+  <footer>
+    <div class="footerleftlogo">
+      <img src="images/logo/logo.png" alt="logo" />
+      <div class="footerlinksocials">
+        <div class="instaholder">
+          <a href="https://www.instagram.com/chatsign_technology?igsh=MXN4cGE4YnNpMGVrNg==" target="_blank"
+            rel="noopener noreferrer">
+
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.574219" y="1.44434" width="34" height="34" rx="17" stroke="#0D0D0D" />
+              <path
+                d="M23.5799 27.1148C24.81 26.6395 25.7824 25.6671 26.2577 24.437C26.4826 23.8544 26.6401 23.1895 26.6829 22.2171C26.693 21.9893 26.7009 21.7981 26.7082 21.6063V15.109C26.7031 14.9734 26.6975 14.8323 26.6902 14.6737C26.6474 13.7012 26.49 13.033 26.265 12.4537C26.0327 11.839 25.675 11.2884 25.207 10.8311C24.7492 10.366 24.1952 10.0049 23.5872 9.77652C23.0045 9.55154 22.3397 9.39406 21.3673 9.35132C20.3875 9.30463 20.0765 9.29395 17.5922 9.29395C15.1079 9.29395 14.7963 9.30463 13.8205 9.34738C12.848 9.39012 12.1798 9.54761 11.6005 9.77258C10.9858 10.0049 10.4352 10.3626 9.97733 10.8311C9.51275 11.2889 9.15167 11.8429 8.92276 12.4504C8.69778 13.033 8.5403 13.6978 8.49755 14.6703C8.45087 15.6501 8.44019 15.9611 8.44019 18.4459C8.44019 20.9308 8.45087 21.2418 8.49362 22.2177C8.53636 23.1901 8.69384 23.8589 8.91938 24.4376C9.15167 25.0523 9.51275 25.603 9.97733 26.0608C10.4352 26.5254 10.9892 26.887 11.5972 27.1154C12.1798 27.3403 12.8446 27.4978 13.8171 27.5406C14.7929 27.5839 15.104 27.5946 17.5888 27.5946C20.0737 27.5946 20.3841 27.5839 21.3605 27.5406C22.333 27.4978 23.0006 27.3398 23.5799 27.1148ZM17.5956 25.9494C15.1535 25.9494 14.8604 25.9387 13.8987 25.896C13.0049 25.8566 12.5224 25.7065 12.2006 25.5816C11.8041 25.4348 11.443 25.2025 11.1495 24.8988C10.8457 24.6018 10.6129 24.2447 10.4667 23.8476C10.3418 23.5259 10.1916 23.0394 10.1522 22.1496C10.1095 21.1845 10.0988 20.8948 10.0988 18.4527C10.0988 16.0106 10.1095 15.7176 10.1522 14.7563C10.1916 13.8626 10.3418 13.3801 10.4667 13.0583C10.6134 12.6613 10.8457 12.3002 11.1534 12.0071C11.4498 11.7034 11.8075 11.4711 12.204 11.3243C12.5257 11.1995 13.0122 11.0493 13.902 11.0099C14.8672 10.9672 15.1568 10.9565 17.5984 10.9565C20.0399 10.9565 20.3335 10.9672 21.2953 11.0099C22.189 11.0493 22.6716 11.1995 22.9933 11.3243C23.3898 11.4711 23.7509 11.7034 24.0439 12.0071C24.3476 12.3041 24.5805 12.6613 24.7267 13.0583C24.8516 13.3801 25.0017 13.866 25.0411 14.7563C25.0839 15.7215 25.0946 16.0111 25.0946 18.4527C25.0946 20.8942 25.0839 21.1805 25.0411 22.1457C25.0017 23.0394 24.8516 23.5219 24.7267 23.8437C24.4191 24.6412 23.7863 25.2739 22.9893 25.581C22.6676 25.7059 22.1817 25.8561 21.2913 25.8954C20.3262 25.9382 20.0371 25.9494 17.5956 25.9494Z"
+                fill="#0D0D0D" />
+              <path
+                d="M17.5924 13.744C14.9967 13.744 12.891 15.8498 12.891 18.4454C12.891 21.0411 14.9967 23.1468 17.5924 23.1468C20.188 23.1468 22.2932 21.0411 22.2932 18.4454C22.2932 15.8498 20.1875 13.744 17.5924 13.744ZM17.5924 21.4944C15.9084 21.4944 14.5428 20.1288 14.5428 18.4449C14.5428 16.7609 15.9084 15.3953 17.5924 15.3953C19.2763 15.3953 20.6419 16.7609 20.6419 18.4449C20.6419 20.1288 19.2763 21.4944 17.5924 21.4944Z"
+                fill="#0D0D0D" />
+              <path
+                d="M23.5755 13.5581C23.5755 12.9518 23.0839 12.4608 22.4776 12.4608C21.8713 12.4608 21.3803 12.9524 21.3803 13.5581C21.3803 14.1639 21.8719 14.6554 22.4776 14.6554C23.0834 14.6554 23.5755 14.1644 23.5755 13.5581Z"
+                fill="#0D0D0D" />
+            </svg>
+          </a>
         </div>
-    </section><!--/#contact-us-->
 
+        <div class="twitterholder">
+          <a href="https://x.com/ChatSign_Tech" target="_blank" rel="noopener noreferrer">
 
-    <section id="contact">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.537109" y="1.44434" width="34" height="34" rx="17" stroke="#0D0D0D" />
+              <g clip-path="url(#clip0_15_7874)">
+                <path
+                  d="M18.9644 17.2965L24.5447 10.9443H23.2228L18.3754 16.4587L14.5066 10.9443H10.0433L15.8949 19.2839L10.0433 25.9443H11.3652L16.4809 20.1197L20.5675 25.9443H25.0308M11.8423 11.9205H13.8731L23.2218 25.0161H21.1905"
+                  fill="#0D0D0D" />
+              </g>
+              <defs>
+                <clipPath id="clip0_15_7874">
+                  <rect width="14.9875" height="15" fill="white" transform="translate(10.0433 10.9443)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
 
-        <div class="container">
-            <div class="container contact-info">
-                <div class="row">
-                    <div class="col-sm-4 col-md-4">
-                        <div class="contact-form">
-                            <div class="wow fadeInLeft">
-                                <img class=" product_img1" src="images/contact_us.jpg" alt="">
-                            </div>
-                            <br />
-                            <h3>Contact Info</h3>
-
-                            <address>
-                                <strong>ChatSign, Inc.</strong><br>
-                                New York University Abu Dhabi <br />PO Box 129188 <br />Saadiyat Island, Abu Dhabi,
-                                United Arab Emirates
-                                <abbr title="Phone">Email: </abbr> chatsigntech@gmail.com
-                            </address>
-                        </div>
-                    </div>
-                    <div class="col-sm-8 col-md-8">
-                        <div class="contact-form">
-
-                            <form id="main-contact-form" name="contact-form" method="post" action="#">
-                                <div class="form-group">
-                                    <input type="text" name="name" class="form-control" placeholder="Name" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" name="email" class="form-control" placeholder="Email" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="subject" class="form-control" placeholder="Subject"
-                                      required>
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="message" class="form-control" rows="8" placeholder="Message"
-                                      required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Send Message</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-    </section><!--/#bottom-->
 
-    <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    &copy; 2024. ChatSign <a target="_blank" href="http://webthemez.com/"
-                      title="Free Bootstrap Themes and HTML Templates">WebThemez.com</a>
-                </div>
-                <div class="col-sm-6">
-                    <ul class="social-icons">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                        <li><a href="#"><i class="fa fa-github"></i></a></li>
-                    </ul>
-                </div>
-            </div>
+        <div class="linkedinholder">
+          <a href="https://www.linkedin.com/company/chatsign-technology/ " target="_blank" rel="noopener noreferrer">
+
+            <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.5" y="1.44434" width="34" height="34" rx="17" stroke="#0D0D0D" />
+              <path
+                d="M13.4322 25.5722V15.9536H10.238V25.5722H13.4322ZM11.8357 14.6406C12.9494 14.6406 13.6427 13.902 13.6427 12.9789C13.6219 12.0349 12.9494 11.3169 11.8569 11.3169C10.7637 11.3169 10.0497 12.0349 10.0497 12.9789C10.0497 13.9019 10.7428 14.6405 11.8148 14.6405L11.8357 14.6406ZM15.2002 25.5722H18.3942V20.2013C18.3942 19.9142 18.4151 19.6264 18.4994 19.4213C18.7302 18.8467 19.2558 18.2519 20.1384 18.2519C21.2939 18.2519 21.7565 19.1339 21.7565 20.427V25.5722H24.9504V20.0572C24.9504 17.1029 23.3748 15.7281 21.2733 15.7281C19.5503 15.7281 18.7936 16.6919 18.3732 17.3484H18.3945V15.9539H15.2004C15.2421 16.8563 15.2002 25.5722 15.2002 25.5722Z"
+                fill="#0D0D0D" />
+            </svg>
+          </a>
+
         </div>
-    </footer><!--/#footer-->
 
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/mousescroll.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/jquery.inview.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/custom-scripts.js"></script>
+      </div>
+    </div>
+    <div class="footerrightlinks">
+      <p>info@chatsign.ai</p>
+      <p>partners@chatsign.ai </p>
+      <p>sales@chatsign.ai </p>
+      <p>customer@chatsign.ai</p>
+
+    </div>
+
+  </footer>
+
+
+
+
+
+
+  <!-- javascript scripts  -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/chatscript.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 2,
+      spaceBetween: 50,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }
+    });
+  </script>
+
+
 </body>
 
 </html>
