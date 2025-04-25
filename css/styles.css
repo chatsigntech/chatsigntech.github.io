@@ -451,6 +451,15 @@ section {
   padding: 40px;
   gap: 18px;
 }
+.ourteamcard3 {
+  width: 30%;
+  background: #f9f9fb;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 18px;
+}
 .ourteamcard2 {
   width: 45%;
   background: #f9f9fb;
@@ -478,6 +487,10 @@ section {
 .ourteamcard img {
   border-radius: 50%;
   margin-top: 48px;
+}
+.ourteamcard3 img {
+  border-radius: 50%;
+  margin-top: 0px;
 }
 .ourteamcard2 img {
   border-radius: 50%;
