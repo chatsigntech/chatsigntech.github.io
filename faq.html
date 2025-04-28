@@ -172,8 +172,7 @@
           <button class="faqcollapsible faqactive">Do you sell software?</button>
           <div class="faqItmcontent">
             <p>
-              No, ChatSign provides integrated hardware solutions. Our AI models are embedded into our proprietary
-              devices, offering a secure experience.
+              Yes we do! Follow us on Instagram to be the first to know about the software's release.
             </p>
           </div>
           <!-- faq item end  -->
@@ -240,7 +239,7 @@
 
 
   <!-- footer  -->
-  <footer>
+  <footer id="footerx">
     <div class="footerleftlogo">
       <img src="images/logo/logo.png" alt="logo" />
       <div class="footerlinksocials">
@@ -357,6 +356,30 @@
         });
       }
     });
+  </script>
+
+  <script>
+    (function () {
+      if (localStorage.getItem('autoplay') !== 'true') return;
+
+
+      const scrollStep = 80;
+      const scrollInterval = 50;
+
+      const scrollTimer = setInterval(() => {
+        if ((window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 5)) {
+
+          clearInterval(scrollTimer);
+          goToNews();
+        } else {
+          window.scrollBy(0, scrollStep);
+        }
+      }, scrollInterval);
+
+      function goToNews() {
+        window.location.href = 'news.html';
+      }
+    })();
   </script>
 
 

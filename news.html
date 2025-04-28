@@ -257,10 +257,20 @@
             </p>
 
             <p class="singlenewsdescriptions">
-              ChatSign is proud to have been selected as one of the few startups supported by Ma'an Social Incubator, a testament to the sustainable and impactful change our technology aims to drive. Through this prestigious program, Ma'an provided invaluable resources, mentorship, and support, recognizing ChatSign's mission to develop effective and trustworthy communication solutions for the Deaf and Hard of Hearing Community. As part of the 10th Cohort, ChatSign participated in a dynamic ecosystem of social entrepreneurs committed to creating meaningful change.<br /><br />
-              The program culminated in a successful Demo Day, where ChatSign showcased its innovative solutions and received a certificate celebrating its achievements and contributions. Graduating from Ma'an Social Incubator marks a significant milestone for ChatSign Technology, reinforcing our commitment to accessibility and inclusive communication.<br /><br />
-              With the support and recognition gained through this initiative, we continue to expand our impact, collaborating with industry leaders, investors, and advocates dedicated to leveraging technology for social good.
-              
+              ChatSign is proud to have been selected as one of the few startups supported by Ma'an Social Incubator, a
+              testament to the sustainable and impactful change our technology aims to drive. Through this prestigious
+              program, Ma'an provided invaluable resources, mentorship, and support, recognizing ChatSign's mission to
+              develop effective and trustworthy communication solutions for the Deaf and Hard of Hearing Community. As
+              part of the 10th Cohort, ChatSign participated in a dynamic ecosystem of social entrepreneurs committed to
+              creating meaningful change.<br /><br />
+              The program culminated in a successful Demo Day, where ChatSign showcased its innovative solutions and
+              received a certificate celebrating its achievements and contributions. Graduating from Ma'an Social
+              Incubator marks a significant milestone for ChatSign Technology, reinforcing our commitment to
+              accessibility and inclusive communication.<br /><br />
+              With the support and recognition gained through this initiative, we continue to expand our impact,
+              collaborating with industry leaders, investors, and advocates dedicated to leveraging technology for
+              social good.
+
 
             </p>
 
@@ -305,10 +315,19 @@
 
             <p class="singlenewsdescriptions">
 
-              ChatSign participated in the largest AI in Healthcare summit in the region, presenting the SignAvatar Station Pro to an audience of researchers, healthcare professionals, and industry leaders. This event provided an invaluable platform for demonstrating the technology's potential and engaging in meaningful discussions with key figures in the healthcare sector. <br /><br />
-              The summit highlighted the growing demand for AI-driven communication solutions, with attendees expressing strong interest in ChatSign's innovative approach. Through insightful exchanges with healthcare specialists, AI researchers, and investors, ChatSign reinforced its commitment to advancing accessible and effective communication tools.By connecting with experts dedicated to leveraging AI for improved patient care and operational efficiency, ChatSign continues to expand its reach and refine its technology to meet the evolving needs of the healthcare industry.<br /><br />
-              The event was a significant milestone, strengthening partnerships and opening new opportunities for collaboration in the pursuit of a more inclusive and technologically advanced future.
-              
+              ChatSign participated in the largest AI in Healthcare summit in the region, presenting the SignAvatar
+              Station Pro to an audience of researchers, healthcare professionals, and industry leaders. This event
+              provided an invaluable platform for demonstrating the technology's potential and engaging in meaningful
+              discussions with key figures in the healthcare sector. <br /><br />
+              The summit highlighted the growing demand for AI-driven communication solutions, with attendees expressing
+              strong interest in ChatSign's innovative approach. Through insightful exchanges with healthcare
+              specialists, AI researchers, and investors, ChatSign reinforced its commitment to advancing accessible and
+              effective communication tools.By connecting with experts dedicated to leveraging AI for improved patient
+              care and operational efficiency, ChatSign continues to expand its reach and refine its technology to meet
+              the evolving needs of the healthcare industry.<br /><br />
+              The event was a significant milestone, strengthening partnerships and opening new opportunities for
+              collaboration in the pursuit of a more inclusive and technologically advanced future.
+
             </p>
 
 
@@ -330,7 +349,7 @@
 
 
   <!-- footer  -->
-  <footer>
+  <footer id="footerx">
     <div class="footerleftlogo">
       <img src="images/logo/logo.png" alt="logo" />
       <div class="footerlinksocials">
@@ -496,6 +515,30 @@
 
       // end
     });
+  </script>
+
+  <script>
+    (function () {
+      if (localStorage.getItem('autoplay') !== 'true') return;
+
+      localStorage.removeItem('autoplay');
+
+      const scrollStep = 80;
+      const scrollInterval = 50;
+
+      const scrollTimer = setInterval(() => {
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 5) {
+          clearInterval(scrollTimer);
+          goToHome();
+        } else {
+          window.scrollBy(0, scrollStep);
+        }
+      }, scrollInterval);
+
+      function goToHome() {
+        window.location.href = 'index.html';
+      }
+    })();
   </script>
 
 

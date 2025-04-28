@@ -6,6 +6,7 @@ body {
   font-weight: 500;
   color: #282828;
   line-height: 26px;
+  position: relative;
 }
 p,
 h1,
@@ -155,6 +156,10 @@ section {
   padding-left: 50px;
   padding-right: 50px;
 }
+.swiper2custom {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -184,11 +189,15 @@ section {
   gap: 16px;
   transition: all 0.3s ease;
 }
+.customprodcardpaddings {
+  padding: 24px 24px 12px !important;
+}
 .productcard:hover {
   box-shadow: rgba(0, 0, 0, 0.02) 0px 0.5px 1px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 .productcard img {
-  max-height: 400px;
+  height: 300px;
+  width: 100%;
   border-radius: 9px;
 }
 .cardcontent {
@@ -1018,3 +1027,15 @@ footer {
   color: #000000;
   margin-top: 3rem;
 }
+.floatingplaypause {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #1877f2;
+
+  /* background-color: rebeccapurple; */
+}
+
+
+
