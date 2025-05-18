@@ -496,13 +496,25 @@ section {
 .ourteamcard img {
   border-radius: 50%;
   margin-top: 48px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
 }
 .ourteamcard3 img {
   border-radius: 50%;
   margin-top: 0px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
 }
 .ourteamcard2 img {
   border-radius: 50%;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
 }
 .ourteamleft {
   display: flex;
@@ -1050,5 +1062,41 @@ footer {
   /* background-color: rebeccapurple; */
 }
 
+.techbody {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1rem 0 2rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.techbodyholder {
+  background: white;
+  padding: 40px 50px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  text-align: center;
+}
 
+.techbodyholder p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.techbodyholder .highlight {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.techbodyholder .highlight:hover {
+  text-decoration: underline;
+}
+
+.techbodyholderteamteam {
+  margin-top: 20px;
+  font-style: italic;
+  color: #555;
+}
