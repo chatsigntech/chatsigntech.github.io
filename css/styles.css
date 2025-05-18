@@ -508,6 +508,8 @@ section {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center;
+  /* align-content: baseline; */
+  margin-top: auto;
 }
 .ourteamcard2 img {
   border-radius: 50%;
