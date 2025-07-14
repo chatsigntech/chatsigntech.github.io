@@ -144,8 +144,12 @@ section {
   font-weight: 400;
   text-align: center;
 }
-.carouselslider {
+.listofprods {
   margin-top: 42px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
 }
 .swiper-wrapper {
   min-height: 200px;
@@ -177,9 +181,11 @@ section {
   object-fit: cover;
 }
 .productcard {
-  width: 90%;
-  height: 100%;
+  text-align: center;
+  width: 48%;
+  min-width: 300px;
   margin-top: 2px;
+  margin-bottom: 2rem;
   padding: 32px 32px 18px;
   border: 1px solid #d6d6d6;
   border-radius: 20px;
@@ -188,6 +194,10 @@ section {
   align-items: center;
   gap: 16px;
   transition: all 0.3s ease;
+}
+.swiperprodcard {
+  width: 100%;
+  height: 95%;
 }
 .customprodcardpaddings {
   padding: 24px 24px 12px !important;
@@ -199,6 +209,7 @@ section {
   height: 300px;
   width: 100%;
   border-radius: 9px;
+  object-fit: cover;
 }
 .cardcontent {
   margin-top: 10px;
@@ -324,6 +335,7 @@ section {
 .getstartedbtn {
   padding: 8px 16px 12px;
   position: relative;
+  display: inline-block;
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.2);
   border-radius: 8px;
   border: 0;
@@ -335,7 +347,9 @@ section {
   line-height: 24px;
   color: #fcfcfc;
   overflow: hidden;
-  z-index: -2;
+  z-index: 1;
+  text-decoration: none;
+  text-align: center;
 }
 .gradfill {
   position: absolute;
@@ -343,8 +357,9 @@ section {
   height: 50px;
   margin: -40px 0 0 -120px;
   background: linear-gradient(266.34deg, #00b57c 2.62%, #3e44a4 99.62%);
-  z-index: -1;
+  z-index: 0;
   transition: all 0.4s ease;
+  pointer-events: none;
 }
 .buttondiv {
   margin-top: 28px;
@@ -355,6 +370,14 @@ section {
   -moz-transform: translateX(100px);
   transform: translateX(100px);
 }
+.btntext {
+  position: relative;
+  z-index: 2;
+}
+.buttondiv a:hover {
+  color: #ffffff;
+}
+
 .missionandvisiondiv {
   align-self: stretch;
   padding: 40px 24px;
@@ -616,7 +639,8 @@ section {
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  color: #0d0d0d;
+  line-height: 30px;
+  color: #00b57c;
 }
 
 .lowerpartCont {
@@ -627,16 +651,14 @@ section {
   font-family: 'Plus Jakarta Sans';
   font-weight: 400;
   font-size: 16px;
-  color: #808080;
+  font-style: normal;
+  line-height: 24px;
+  color: #3328bf;
 }
 .lowerpartCont .lowerpartContemail {
-  font-family: 'Plus Jakarta Sans';
-  font-style: normal;
-  font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   text-decoration-line: underline;
-  color: #808080;
 }
 .finalwordsleftText {
   width: 60%;
@@ -653,6 +675,9 @@ section {
   line-height: 24px;
   color: #808080;
 }
+.labelcolor {
+  color: #3328bf !important;
+}
 
 /* footer css  */
 
@@ -662,17 +687,38 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0px 15px;
-  gap: 10px;
+  padding: 4rem 0px;
+  gap: 4%;
   background: #f9f9fb;
 }
-
+.footerBigText {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 60px;
+  color: #0d0d0d;
+  text-align: center;
+}
+.footerleftlinks {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+}
+.footerleftlinks p {
+  color: #808080;
+  line-height: 44px;
+}
+.footerdivider {
+  height: 250px;
+  border: 1px solid #a1a1a1;
+}
 .footerleftlogo {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  padding: 100px 25% 100px 0px;
 }
 
 .footerleftlogo img {
@@ -685,21 +731,18 @@ footer {
   gap: 15px;
 }
 
-.footerrightlinks {
-  border-left: 1px solid rgb(223, 222, 222);
+/* .footerrightlinks {
   align-self: stretch;
   display: flex;
   flex-direction: column;
-  padding: 50px;
   justify-content: space-between;
-}
+} */
 .footerrightlinks p {
-  margin-bottom: 10px;
+  font-family: 'Plus Jakarta Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  text-decoration-line: underline;
+  font-size: 18px;
+  line-height: 44px;
   color: #808080;
 }
 
@@ -713,6 +756,14 @@ footer {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+.ourservicesprodcardholder .serviceImg {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 2.8rem;
+  margin-bottom: 2.8rem;
 }
 .ourservicesprodcardholder .productcard {
   width: 70%;
@@ -808,7 +859,7 @@ footer {
 
 .input:hover::after {
   --border-color: #acb3dc;
-  box-shadow: 0 3px 6px var(--border-color, #e1e6f9);
+  box-shadow: 0 1px 1px var(--border-color, #e1e6f9);
 }
 
 .input-field:focus ~ .input-label,
@@ -818,7 +869,7 @@ footer {
 
 .input-field:focus ~ .input-label + .input::after,
 .input-field:valid ~ .input-label + .input::after {
-  box-shadow: 0 3px 6px #6658d3;
+  box-shadow: 0 1px 1px #6658d3;
 }
 
 .input-field:focus + .input-label,

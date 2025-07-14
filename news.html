@@ -42,53 +42,38 @@
 
             <!-- nav item 2  -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Products
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#prodbringhere">SignAvatar Station Pro</a></li>
-                <li><a class="dropdown-item" href="#prodbringhere">SignAvatar Station Lite</a></li>
-                <li><a class="dropdown-item" href="#prodbringhere">SignPodium</a></li>
-              </ul>
-            </li>
-
-            <!-- nav item 3  -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Use Cases
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#signpodium">SignPodium</a></li>
-                <li><a class="dropdown-item" href="#signavpro">SignAvatar Station Pro</a></li>
-                <li><a class="dropdown-item" href="#signavlite">SignAvatar Station Lite</a></li>
+                <li><a class="dropdown-item" href="index.html#prodbringhere1">For Institutions</a></li>
+                <li><a class="dropdown-item" href="index.html#prodbringhere2">For Individuals</a></li>
               </ul>
             </li>
 
             <!-- nav item 4  -->
             <li class="nav-item">
-              <a class="nav-link" href="#secabout">About</a>
+              <a class="nav-link" href="index.html#secabout">About</a>
             </li>
 
             <!-- nav item 5  -->
             <li class="nav-item">
-              <a class="nav-link" href="#secteam">Team</a>
+              <a class="nav-link" href="index.html#secteam">Team</a>
             </li>
 
             <!-- nav item 6  -->
             <li class="nav-item">
-              <a class="nav-link" href="#seccontact">Contact</a>
+              <a class="nav-link" href="faq.html">FAQ</a>
             </li>
 
             <!-- nav item 7  -->
             <li class="nav-item">
-              <a class="nav-link" href="faq.html">FAQ</a>
+              <a class="nav-link active" href="news.html">News</a>
             </li>
 
             <!-- nav item 8  -->
             <li class="nav-item">
-              <a class="nav-link active" href="news.html">News</a>
+              <a class="nav-link" href="contactus.html">Contact Us</a>
             </li>
 
           </ul>
@@ -113,7 +98,7 @@
 
             <!-- item 1  -->
             <div class="swiper-slide">
-              <div class="productcard tooltip-follow">
+              <div class="productcard tooltip-follow swiperprodcard">
                 <span class="tooltip-text">Click to read more</span>
                 <img src="images/news/news1.jpg" alt="SignAvatar Station Pro">
                 <div class="cardcontent">
@@ -132,7 +117,7 @@
             <!-- item 2 -->
             <div class="swiper-slide">
 
-              <div class="productcard tooltip-follow">
+              <div class="productcard tooltip-follow swiperprodcard">
                 <span class="tooltip-text">Click to read more</span>
                 <img src="images/news/news2.jpg" alt="SignAvatar Station Pro">
                 <div class="cardcontent">
@@ -150,7 +135,7 @@
             <!-- item 3  -->
             <div class="swiper-slide">
 
-              <div class="productcard tooltip-follow">
+              <div class="productcard tooltip-follow swiperprodcard">
                 <span class="tooltip-text">Click to read more</span>
 
                 <img src="images/news/news3.jpg" alt="SignPodium">
@@ -343,14 +328,32 @@
   </section>
 
 
-
-
-
-
-
   <!-- footer  -->
-  <footer id="footerx">
-    <div class="footerleftlogo">
+  <footer>
+    <div class="footerBigText">
+      Connect <br /> with Us
+    </div>
+
+    <div class="footerleftlinks">
+      <p>General Inquiries </p>
+      <p>Pilot ChatSign in your Organisation </p>
+      <p>Getting Started with ChatSign </p>
+      <p>Existing Customers and Support </p>
+      <p>Investor Relations </p>
+    </div>
+
+    <div class="footerdivider"></div>
+
+    <div class="footerrightlinks">
+      <p>info@chatsign.ai</p>
+      <p>partners@chatsign.ai</p>
+      <p>customer@chatsign.ai</p>
+      <p>sales@chatsign.ai</p>
+      <p>investors@chatsign.ai</p>
+
+    </div>
+
+    <div class="footerleftlogo" id="footerx">
       <img src="images/logo/logo.png" alt="logo" />
       <div class="footerlinksocials">
         <div class="instaholder">
@@ -407,13 +410,7 @@
 
       </div>
     </div>
-    <div class="footerrightlinks">
-      <p>info@chatsign.ai</p>
-      <p>partners@chatsign.ai </p>
-      <p>sales@chatsign.ai </p>
-      <p>customer@chatsign.ai</p>
 
-    </div>
 
   </footer>
 
@@ -467,6 +464,10 @@
       }
       document.querySelectorAll('.swiper-slide').forEach((slide, index) => {
         slide.addEventListener('click', () => {
+          window.scrollTo({
+            top: 80,
+            behavior: 'smooth' // optional: makes it smooth
+          });
           newsSection.style.display = 'none';
           hideAllNewsDetails();
           if (index === 0) {
