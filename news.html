@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,8 +22,6 @@
 
   <!-- nav bar  -->
   <header id="header">
-
-
     <nav class="navbar navbar-expand-lg  navbarbg givesomepaddingtopandbottom">
       <div class="container">
         <a class="navbar-brand colorwhite" href="#">ChatSign</a>
@@ -84,6 +81,7 @@
   </header>
 
 
+  <!-- news swiper section  -->
   <section id="newsSection">
     <div class="container sectionContent">
       <div class="custom-container">
@@ -91,66 +89,27 @@
           News
         </p>
 
-
         <!-- news swiper -->
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper" id="newsSwiper">
           <div class="swiper-wrapper">
 
-            <!-- item 1  -->
+            <!-- items from JS.  -->
+            <!-- 
             <div class="swiper-slide">
               <div class="productcard tooltip-follow swiperprodcard">
                 <span class="tooltip-text">Click to read more</span>
-                <img src="images/news/news1.jpg" alt="SignAvatar Station Pro">
+                <img src="images/news/news0.jpg" alt="SignAvatar Station Pro">
                 <div class="cardcontent">
                   <p class="itmidicator">News</p>
-                  <p class="itmTitle">ChatSign's First Demo Showcase at AIE2025</p>
-                  <p class="itmDescrption">ChatSign had a remarkable experience at AIE 2025, showcasing SignAvatar
-                    Station Pro and engaging with top AI and engineering experts to explore groundbreaking innovations
-                    and real-world solutions.
+                  <p class="itmTitle">ChatSign Registered under Abu Dhabi Global Market</p>
+                  <p class="itmDescrption">ChatSign is now officially registered under Abu Dhabi Global Market (ADGM),
+                    marking a major step in our growth as a UAE-based AI accessibility startup.
                   </p>
                 </div>
 
               </div>
             </div>
-
-
-            <!-- item 2 -->
-            <div class="swiper-slide">
-
-              <div class="productcard tooltip-follow swiperprodcard">
-                <span class="tooltip-text">Click to read more</span>
-                <img src="images/news/news2.jpg" alt="SignAvatar Station Pro">
-                <div class="cardcontent">
-                  <p class="itmidicator">News</p>
-                  <p class="itmTitle">ChatSign Graduated From Ma'an Social Incubator Cohort 10</p>
-                  <p class="itmDescrption">ChatSign's Milestone: Graduating from Ma'an Social Incubator's 10th Cohort
-                  </p>
-                </div>
-
-              </div>
-
-
-            </div>
-
-            <!-- item 3  -->
-            <div class="swiper-slide">
-
-              <div class="productcard tooltip-follow swiperprodcard">
-                <span class="tooltip-text">Click to read more</span>
-
-                <img src="images/news/news3.jpg" alt="SignPodium">
-                <div class="cardcontent">
-                  <p class="itmidicator">News</p>
-                  <p class="itmTitle">ChatSign Demo at AIRH2025 </p>
-                  <p class="itmDescrption">
-                    ChatSign showcased SignAvatar Station Pro at the region's largest AI in Healthcare summit, engaging
-                    with industry leaders, researchers, and investors to advance AI-driven communication solutions for
-                    healthcare.
-                  </p>
-                </div>
-
-              </div>
-            </div>
+             -->
 
             <!-- done all items  -->
           </div>
@@ -160,173 +119,29 @@
         <!-- news swiper end  -->
 
 
-
       </div>
     </div>
   </section>
 
-
-  <!-- first news div  -->
-  <section id="firstNewsItem" class="news-detail" style="display:none;">
+  <!--  news div  -->
+  <section id="newsDetail" class="news-detail" style="display:none;">
     <div class="container sectionContent">
       <div class="custom-container">
         <div class="newsItemholderPage">
+          <button class="go-back">
+            <img src="images/backbtn.png" width="40" height="50" alt="back" />
+          </button>
 
+          <div id="detailContent" class="newsSingleItemContent">
 
-
-          <button class="go-back"><img src="./images/backbtn.png" width="40" height="50" alt="backbtn" /></button>
-
-          <div class="newsSingleItemContent">
-            <p class="singleNewsTitle">
-              ChatSign's First Demo Showcase at AIE2025: The First International Symposium on Artificial Intelligence
-              for Engineering Innovations
-            </p>
-            <div class="singleNewsimageholder">
-              <img src="./images/news/news1.jpg" alt="news1" />
-            </div>
-            <p class="singlenewstips">Posted on: 2025/03/30</p>
-            <p class="singlenewstips">Relevant Events/Institutions: AIE2025, New York University Abu Dhabi</p>
-
-            <p class="singlenewsdescriptions">
-              ChatSign had an exceptional experience at the AIE 2025 Symposium, where leading experts in AI and
-              engineering collaborated to drive innovation and address real-world challenges. This interdisciplinary
-              event brought together researchers, industry leaders, and innovators to explore AI's transformative impact
-              across key sectors, including cybersecurity, robotics, and renewable energy. <br /><br />
-              The symposium featured groundbreaking research presentations, thought-provoking discussions, and
-              opportunities for meaningful collaboration. By engaging with experts at the forefront of AI-driven
-              engineering solutions, ChatSign gained valuable insights and forged connections that will contribute to
-              the future of technological advancement. <br /><br />
-              Most importantly, ChatSign demonstrated its product: SignAvatar Station Pro, a successful professional
-              milestone. The knowledge exchanged at AIE 2025 reinforces the critical role of AI in shaping a smarter,
-              more efficient world.
-
-            </p>
-
-
-
-
+            <!-- fill dynamically -->
 
           </div>
           <div class="bufferzonenews"></div>
         </div>
-
-
-      </div>
-    </div>
-
-  </section>
-
-  <!-- second news div  -->
-  <section id="secondNewsItem" class="news-detail" style="display:none;">
-    <div class="container sectionContent">
-      <div class="custom-container">
-
-        <div class="newsItemholderPage">
-
-
-
-          <button class="go-back"><img src="./images/backbtn.png" width="40" height="50" alt="backbtn" /></button>
-
-          <div class="newsSingleItemContent">
-            <p class="singleNewsTitle">
-              ChatSign Graduated From Ma'an Social Incubator Cohort 10
-            </p>
-            <div class="singleNewsimageholder">
-              <img src="./images/news/news2.jpg" alt="news1" />
-            </div>
-            <p class="singlenewstips">
-              Posted on: 2025/03/30
-            </p>
-            <p class="singlenewstips">
-              Relevant Events/Institutions: Ma'an Social Incubator, StartAD, New York University Abu Dhabi
-            </p>
-
-            <p class="singlenewsdescriptions">
-              ChatSign is proud to have been selected as one of the few startups supported by Ma'an Social Incubator, a
-              testament to the sustainable and impactful change our technology aims to drive. Through this prestigious
-              program, Ma'an provided invaluable resources, mentorship, and support, recognizing ChatSign's mission to
-              develop effective and trustworthy communication solutions for the Deaf and Hard of Hearing Community. As
-              part of the 10th Cohort, ChatSign participated in a dynamic ecosystem of social entrepreneurs committed to
-              creating meaningful change.<br /><br />
-              The program culminated in a successful Demo Day, where ChatSign showcased its innovative solutions and
-              received a certificate celebrating its achievements and contributions. Graduating from Ma'an Social
-              Incubator marks a significant milestone for ChatSign Technology, reinforcing our commitment to
-              accessibility and inclusive communication.<br /><br />
-              With the support and recognition gained through this initiative, we continue to expand our impact,
-              collaborating with industry leaders, investors, and advocates dedicated to leveraging technology for
-              social good.
-
-
-            </p>
-
-
-
-
-
-          </div>
-          <div class="bufferzonenews"></div>
-        </div>
-
-
-
       </div>
     </div>
   </section>
-
-
-  <!-- third news div  -->
-  <section id="thirdNewsItem" class="news-detail" style="display:none;">
-    <div class="container sectionContent">
-      <div class="custom-container">
-        <div class="newsItemholderPage">
-
-
-
-          <button class="go-back"><img src="./images/backbtn.png" width="40" height="50" alt="backbtn" /></button>
-
-          <div class="newsSingleItemContent">
-            <p class="singleNewsTitle">
-              ChatSign Demo at AIRH2025
-            </p>
-            <div class="singleNewsimageholder">
-              <img src="./images/news/news3.jpg" alt="news1" />
-            </div>
-            <p class="singlenewstips">
-              Posted on: 2025/03/30
-            </p>
-            <p class="singlenewstips">
-              Relevant Events/Institutions: AIRH2025, New York University Abu Dhabi
-            </p>
-
-            <p class="singlenewsdescriptions">
-
-              ChatSign participated in the largest AI in Healthcare summit in the region, presenting the SignAvatar
-              Station Pro to an audience of researchers, healthcare professionals, and industry leaders. This event
-              provided an invaluable platform for demonstrating the technology's potential and engaging in meaningful
-              discussions with key figures in the healthcare sector. <br /><br />
-              The summit highlighted the growing demand for AI-driven communication solutions, with attendees expressing
-              strong interest in ChatSign's innovative approach. Through insightful exchanges with healthcare
-              specialists, AI researchers, and investors, ChatSign reinforced its commitment to advancing accessible and
-              effective communication tools.By connecting with experts dedicated to leveraging AI for improved patient
-              care and operational efficiency, ChatSign continues to expand its reach and refine its technology to meet
-              the evolving needs of the healthcare industry.<br /><br />
-              The event was a significant milestone, strengthening partnerships and opening new opportunities for
-              collaboration in the pursuit of a more inclusive and technologically advanced future.
-
-            </p>
-
-
-
-
-
-          </div>
-          <div class="bufferzonenews"></div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
 
   <!-- footer  -->
   <footer>
@@ -414,11 +229,6 @@
 
   </footer>
 
-
-
-
-
-
   <!-- javascript scripts  -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -430,15 +240,158 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const internalLinks = document.querySelectorAll('a.nav-link[href^="#"]');
 
-      internalLinks.forEach(link => {
-        link.addEventListener("click", function (e) {
-          e.preventDefault();
-          const sectionId = this.getAttribute("href");
-          window.location.href = "index.html" + sectionId;
-        });
+      // data 
+      /*
+      Format:
+        {
+          id: 1,
+          title: '',
+          img: '',
+          snippet: "",
+          fullText: ``,
+          date: '',
+          relevant: ''
+        },
+      */
+      const newsItems = [
+        {
+          id: 0,
+          title: 'ChatSign Registered under Abu Dhabi Global Market',
+          img: 'images/news/news0.jpg',
+          snippet: 'ChatSign is now officially registered under Abu Dhabi Global Market (ADGM), marking a major step in our growth as a UAE-based AI accessibility startup.',
+          fullText: `
+            ChatSign is now officially registered under Abu Dhabi Global Market (ADGM), marking a significant milestone in our growth as a deep-tech startup rooted in the UAE. ADGM stands as one of the region's most respected international financial centers and innovation hubs, providing startups like ours with a forward-thinking regulatory environment and access to a dynamic ecosystem of investors, government partners, and global companies. Registering under ADGM reflects our long-term commitment to building accessible, AI-driven technologies from within the UAE, and expanding their reach to institutions that prioritize inclusion and digital transformation.
+            <br/><br/>
+            This milestone strengthens our operational foundation and opens new doors for strategic collaborations across healthcare, education, and the public sector. With the support and credibility that ADGM brings, were better positioned to scale ChatSign's real-time sign language translation systems,built in-house at NYU Abu Dhabi, to institutions across the MENA region and beyond. As we continue to engage with investors, researchers, and government stakeholders, our registration with ADGM underscores our readiness to grow responsibly and sustainably, while staying focused on our mission: to bridge communication gaps and advance accessibility through intelligent, locally developed solutions.
+          `,
+          date: '2025/07/02',
+          relevant: 'Abu Dhabi Global Market'
+        },
+        {
+          id: 1,
+          title: 'ChatSign at Make It in The Emirates 2025',
+          img: 'images/news/news1.jpg',
+          snippet: "ChatSign proudly participated in Make It in the Emirates 2025, showcasing its AI-powered sign language technologies as part of the UAE's national push for advanced manufacturing and inclusive innovation.",
+          fullText: `
+          ChatSign Technology was honored to take part in Make It in the Emirates 2025, one of the UAE's flagship platforms for industrial innovation and investment. As a deep-tech startup spun out of NYU Abu Dhabi, ChatSign joined a powerful lineup of local and international innovators showcasing cutting-edge solutions that align with the UAE's vision for a future-ready, inclusive economy. The event provided an ideal stage for us to present our real-time sign language translation technologies to government leaders, manufacturers, and ecosystem partners.
+          <br /><br/>
+          At the exhibition, we unveiled our SignAvatar Station Pro,an AI-powered, full-body digital sign language interpreter, and engaged directly with stakeholders interested in deploying our solutions in smart cities, healthcare, and public service environments. The overwhelming interest and feedback from attendees underscored a shared commitment to making communication more accessible for Deaf and Hard-of-Hearing individuals. ChatSign's booth attracted visitors from across the industrial spectrum, affirming the importance of embedding accessibility into the core of national development.
+          <br /><br/>
+          Participating in Make It in the Emirates was not only a milestone for visibility, but a testament to our deepening integration into the UAE's innovation ecosystem. We are excited to build on this momentum by forming strategic partnerships and exploring local manufacturing opportunities under the ADGM framework. With continued support from the UAE's national initiatives, ChatSign remains committed to transforming accessibility through AI,made in the Emirates, for the world.
+
+          `,
+          date: '2025/07/02',
+          relevant: 'Make It in the Emirates, New York University Abu Dhabi'
+        },
+        {
+          id: 2,
+          title: 'ChatSign at the 50th Arab Deaf Week',
+          img: 'images/news/news2.jpg',
+          snippet: "ChatSign was honored to participate in the opening ceremony of the 50th Arab Deaf Week, where we shared our mission and engaged directly with the Deaf and Hard-of-Hearing community.",
+          fullText: `
+          
+          ChatSign Technology was deeply honored to be invited by the Zayed Higher Organization for People of Determination to participate in the opening ceremony of the 50th Arab Deaf Week, held at Dalma Mall.
+          <br /><br/>
+          Taking the stage to share our mission and demonstrate our assistive communication technology was a powerful and humbling experience. Standing alongside members of the Deaf and Hard-of-Hearing (DHH) community reminded us exactly why ChatSign exists: to bridge the communication gap that continues to affect millions in their daily lives.
+          <br /><br/>
+          Arab Deaf Week offered more than just a platform—it was a space for connection, dialogue, and learning. We were grateful to engage directly with future users of ChatSign, and to receive heartfelt encouragement, insightful perspectives, and constructive feedback. These conversations are vital to our work. They shape our roadmap, refine our technology, and keep us accountable to the community we serve.
+          <br /><br/>
+          At ChatSign, we believe accessibility goes beyond innovation—it is rooted in empathy, inclusion, and the determination to rethink how society communicates. Participating in this event strengthened our resolve to keep building with and for the DHH community.
+          <br /><br/>
+          We extend our sincerest thanks to everyone who welcomed us, shared their stories, and inspired us during Arab Deaf Week. We look forward to continuing this journey—together.
+          
+          `,
+          date: '2025/03/30',
+          relevant: 'Zayed Higher Organization (ZHO), New York University Abu Dhabi'
+        },
+        {
+          id: 3,
+          title: 'ChatSign at Dubai AI Festival 2025',
+          img: 'images/news/news3.jpg',
+          snippet: "ChatSign Technology was showcased at the Dubai AI Festival, where it demonstrated its real-time AI system for bidirectional communication. The team engaged with  innovators to highlight the importance of accessibility and inclusion in AI development.",
+          fullText: `
+          ChatSign Technology was honored to participate in the 2025 Dubai AI Festival, a premier gathering of global innovators dedicated to advancing artificial intelligence for real-world impact. The event brought together leading minds to explore how AI can create inclusive, transformative experiences across industries and communities.
+          <br /><br/>
+          During the festival, ChatSign presented its cutting-edge AI-powered application designed to facilitate real-time communication between Deaf and Hard-of-Hearing individuals and the hearing world. The system's key features—speech-to-sign and sign-to-speech translation through an AI avatar and built-in camera—enable barrier-free interaction without the need for human interpretation.
+          <br /><br/>
+          Visitors to the ChatSign booth, including technologists, educators, and accessibility advocates, experienced live demonstrations and shared valuable feedback. The enthusiasm for accessible communication solutions highlighted the growing recognition that inclusion must be integral to AI innovation, not an afterthought.
+          <br /><br/>
+          ChatSign Technology extends its gratitude to the Dubai AI Festival organizers, New York University Abu Dhabi, fellow exhibitors, and the wider community committed to shaping a more accessible future through technology.
+          `,
+          date: '2025/03/30',
+          relevant: 'Dubai AI Festival, New York University Abu Dhabi'
+        },
+        
+
+        {
+          id: 4,
+          title: 'ChatSign Graduated From Ma\'an Social Incubator Cohort 10',
+          img: 'images/news/news4.jpg',
+          snippet: "ChatSign's Milestone: Graduating from Ma'an Social Incubator's 10th Cohort",
+          fullText: `
+          ChatSign is proud to have been selected as one of the few startups supported by Ma'an Social Incubator, a testament to the sustainable and impactful change our technology aims to drive. Through this prestigious program, Ma'an provided invaluable resources, mentorship, and support, recognizing ChatSign's mission to develop effective and trustworthy communication solutions for the Deaf and Hard of Hearing Community. As part of the 10th Cohort, ChatSign participated in a dynamic ecosystem of social entrepreneurs committed to creating meaningful change.
+          <br /><br/>
+          The program culminated in a successful Demo Day, where ChatSign showcased its innovative solutions and received a certificate celebrating its achievements and contributions. Graduating from Ma'an Social Incubator marks a significant milestone for ChatSign Technology, reinforcing our commitment to accessibility and inclusive communication.
+          <br /><br/>
+          With the support and recognition gained through this initiative, we continue to expand our impact, collaborating with industry leaders, investors, and advocates dedicated to leveraging technology for social good.
+          `,
+          date: '2025/03/30',
+          relevant: 'Ma\'an Social Incubator, StartAD, New York University Abu Dhabi'
+        },
+        {
+          id: 5,
+          title: "ChatSign's First Demo Showcase at AIE2025",
+          img: 'images/news/news5.jpg',
+          snippet: 'ChatSign had a remarkable experience at AIE 2025, showcasing SignAvatar Station Pro and engaging with top AI and engineering experts.',
+          fullText: `
+          ChatSign had an exceptional experience at the AIE 2025 Symposium, where leading experts in AI and engineering collaborated to drive innovation and address real-world challenges. This interdisciplinary event brought together researchers, industry leaders, and innovators to explore AI's transformative impact across key sectors, including cybersecurity, robotics, and renewable energy.
+          <br /><br/>
+          The symposium featured groundbreaking research presentations, thought-provoking discussions, and opportunities for meaningful collaboration. By engaging with experts at the forefront of AI-driven engineering solutions, ChatSign gained valuable insights and forged connections that will contribute to the future of technological advancement.
+          <br /><br/>
+          Most importantly, ChatSign demonstrated its product: SignAvatar Station Pro, a successful professional milestone. The knowledge exchanged at AIE 2025 reinforces the critical role of AI in shaping a smarter, more efficient world.
+          `,
+          date: '2025/03/30',
+          relevant: 'AIE2025, New York University Abu Dhabi'
+        },
+        {
+          id: 6,
+          title: 'ChatSign Demo at AIRH2025',
+          img: 'images/news/news6.jpg',
+          snippet: 'ChatSign showcased SignAvatar Station Pro at the region\'s largest AI in Healthcare summit.',
+          fullText: `
+            ChatSign participated in the largest AI in Healthcare summit in the region, presenting the SignAvatar Station Pro to an audience of researchers, healthcare professionals, and industry leaders. This event provided an invaluable platform for demonstrating the technology's potential and engaging in meaningful discussions with key figures in the healthcare sector.
+          <br /><br/>
+            The summit highlighted the growing demand for AI-driven communication solutions, with attendees expressing strong interest in ChatSign's innovative approach. Through insightful exchanges with healthcare specialists, AI researchers, and investors, ChatSign reinforced its commitment to advancing accessible and effective communication tools.By connecting with experts dedicated to leveraging AI for improved patient care and operational efficiency, ChatSign continues to expand its reach and refine its technology to meet the evolving needs of the healthcare industry.
+          <br /><br/>
+            The event was a significant milestone, strengthening partnerships and opening new opportunities for collaboration in the pursuit of a more inclusive and technologically advanced future.
+
+          `,
+          date: '2025/03/30',
+          relevant: 'AIRH2025, NYU Abu Dhabi'
+        }
+      ];
+      // Populate swiper slides dynamically
+      const swiperWrapper = document.querySelector('#newsSwiper .swiper-wrapper');
+
+      newsItems.forEach(item => {
+        console.log("Adding child.")
+        const slide = document.createElement('div');
+        slide.className = 'swiper-slide';
+        slide.innerHTML = `
+          <div class="productcard tooltip-follow swiperprodcard" data-id="${item.id}">
+            <span class="tooltip-text">Click to read more</span>
+            <img src="${item.img}" alt="${item.title}">
+            <div class="cardcontent">
+              <p class="itmidicator">News</p>
+              <p class="itmTitle">${item.title}</p>
+              <p class="itmDescrption">${item.snippet}</p>
+            </div>
+          </div>
+        `;
+        swiperWrapper.appendChild(slide);
       });
+
 
       // swiper 
       var swiper = new Swiper(".mySwiper", {
@@ -450,67 +403,59 @@
         }
       });
 
-      // buttons 
+      // populate details 
       const newsSection = document.getElementById("newsSection");
-      const firstNewsItem = document.getElementById("firstNewsItem");
-      const secondNewsItem = document.getElementById("secondNewsItem");
-      const thirdNewsItem = document.getElementById("thirdNewsItem");
+      const newsDetail = document.getElementById('newsDetail');
+      const detailContent = document.getElementById('detailContent');
 
-      // Utility function to hide all news detail sections
-      function hideAllNewsDetails() {
-        document.querySelectorAll('.news-detail').forEach(section => {
-          section.style.display = 'none';
-        });
-      }
-      document.querySelectorAll('.swiper-slide').forEach((slide, index) => {
-        slide.addEventListener('click', () => {
-          window.scrollTo({
-            top: 80,
-            behavior: 'smooth' // optional: makes it smooth
-          });
-          newsSection.style.display = 'none';
-          hideAllNewsDetails();
-          if (index === 0) {
-            firstNewsItem.style.display = 'block';
-          } else if (index === 1) {
-            secondNewsItem.style.display = 'block';
-          } else if (index === 2) {
-            thirdNewsItem.style.display = 'block';
-          }
-        });
+      swiperWrapper.addEventListener('click', e => {
+        const card = e.target.closest('.productcard');
+        if (!card) return;
+        const item = newsItems.find(n => n.id == card.dataset.id);
+        if (!item) return;
+
+        detailContent.innerHTML = `
+          <p class="singleNewsTitle">${item.title}</p>
+          <div class="singleNewsimageholder"><img src="${item.img}" alt="news${item.id}"></div>
+          <p class="singlenewstips">Posted on: ${item.date}</p>
+          <p class="singlenewstips">Relevant Events/Institutions: ${item.relevant}</p>
+          <p class="singlenewsdescriptions">${item.fullText}</p>
+        `;
+
+        newsSection.style.display = 'none';
+        newsDetail.style.display = 'block';
+        window.scrollTo({ top: 90, behavior: 'smooth' });
       });
 
+
       // go back
-      document.querySelectorAll('.go-back').forEach(button => {
-        button.addEventListener('click', () => {
-          hideAllNewsDetails();
-          newsSection.style.display = 'block';
-        });
+      document.querySelector('.go-back').addEventListener('click', () => {
+        newsDetail.style.display = 'none';
+        newsSection.style.display = 'block';
+        window.scrollTo({ top: 130, behavior: 'smooth' });
       });
 
       // for tooltip
-
-      document.querySelectorAll('.tooltip-follow').forEach(card => {
+      document.addEventListener('mouseover', e => {
+        const card = e.target.closest('.tooltip-follow');
+        if (!card) return;
         const tooltip = card.querySelector('.tooltip-text');
-
-        card.addEventListener('mouseenter', () => {
-          tooltip.style.opacity = 0.9;
-        });
-
-        card.addEventListener('mouseleave', () => {
-          tooltip.style.opacity = 0;
-        });
-
-        card.addEventListener('mousemove', (e) => {
-          const rect = card.getBoundingClientRect();
-          const offsetX = e.clientX - rect.left;
-          const offsetY = e.clientY - rect.top;
-
-          tooltip.style.left = offsetX + 5 + 'px';
-          tooltip.style.top = offsetY + 15 + 'px';
-        });
+        tooltip.style.opacity = 0.9;
       });
-
+      document.addEventListener('mouseout', e => {
+        const card = e.target.closest('.tooltip-follow');
+        if (!card) return;
+        const tooltip = card.querySelector('.tooltip-text');
+        tooltip.style.opacity = 0;
+      });
+      document.addEventListener('mousemove', e => {
+        const card = e.target.closest('.tooltip-follow');
+        if (!card) return;
+        const tooltip = card.querySelector('.tooltip-text');
+        const rect = card.getBoundingClientRect();
+        tooltip.style.left = e.clientX - rect.left + 5 + 'px';
+        tooltip.style.top = e.clientY - rect.top + 15 + 'px';
+      });
 
 
 
@@ -518,6 +463,8 @@
     });
   </script>
 
+
+  <!-- script for autoplay scroll  -->
   <script>
     (function () {
       if (localStorage.getItem('autoplay') !== 'true') return;
