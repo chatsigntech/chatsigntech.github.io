@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('../fonts/Gilroy-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url('../fonts/Gilroy-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   background: white;
   font-family: 'Plus Jakarta Sans', serif;
@@ -265,6 +276,7 @@ section {
 }
 
 .useCaseTextDesc,
+.whyuscardbody,
 .whyuscardbody ul li {
   font-weight: 400;
   font-size: 17px;
@@ -1152,4 +1164,73 @@ footer {
   margin-top: 20px;
   font-style: italic;
   color: #555;
+}
+
+/* apply now page  */
+.applynowHeader {
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  color: #3f42a4;
+  text-align: center;
+}
+.applynowDescription {
+  font-family: 'Gilroy-Regular', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #3e44a4;
+  margin-top: 2.5rem;
+  margin-bottom: 6.5rem;
+}
+.ourvaluesflesitems {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 2.5rem;
+  margin-bottom: 6.5rem;
+}
+.ourvaluesflesitems .whyuscard {
+  width: 48%;
+}
+.ourvaluesflesitems .whyuscardbody {
+  margin-left: 50px;
+}
+.learntogethersection {
+  margin-top: 2.5rem;
+  margin-bottom: 6.5rem;
+  font-family: 'Gilroy-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  letter-spacing: 0.03em;
+  color: #3e44a4;
+}
+.learntogethersection ul {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.applynowForm {
+  margin-top: 2.5rem;
+  margin-bottom: 6.5rem;
+}
+.applynowForm .card-form {
+  width: 50%;
+  margin: 0 auto;
+}
+.applynowForm .card-form .input {
+  padding-top: 40px;
+}
+.applynowForm .card-form label {
+  display: block;
+  width: 100%;
+  text-align: center;
 }

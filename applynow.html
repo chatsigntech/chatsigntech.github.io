@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chat Sign technology for every individual with hearing impairment">
+  <meta name="author" content="chatsign">
+  <title>ChatSign Technology</title>
+
+  <!-- core CSS -->
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="shortcut icon" href="images/logo/logo.png">
+</head>
+
+
+<body>
+
+  <!-- nav bar  -->
+  <header id="header">
+
+
+    <nav class="navbar navbar-expand-lg  navbarbg givesomepaddingtopandbottom">
+      <div class="container">
+        <a class="navbar-brand colorwhite" href="#">ChatSign</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 customnavul">
+
+            <!-- nav item 1  -->
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+
+            <!-- nav item 2  -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html#prodbringhere1">For Institutions</a></li>
+                <li><a class="dropdown-item" href="index.html#prodbringhere2">For Individuals</a></li>
+              </ul>
+            </li>
+
+            <!-- nav item 4  -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#secabout">About</a>
+            </li>
+
+            <!-- nav item 5  -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#secteam">Team</a>
+            </li>
+
+            <!-- nav item 6  -->
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ</a>
+            </li>
+
+            <!-- nav item 7  -->
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+
+            <!-- nav item 8  -->
+            <li class="nav-item">
+              <a class="nav-link active" href="contactus.html">Contact Us</a>
+            </li>
+
+            <!-- nav item 9  -->
+            <li class="nav-item">
+              <a class="nav-link" href="applynow.html">Apply Now</a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <div id="secapplynow">
+    <div class="container sectionContent">
+      <div class="custom-container">
+
+
+        <!-- first section  -->
+
+        <p class="applynowHeader">
+          Apply Now
+        </p>
+        <p class="applynowDescription">
+          At ChatSign Technology, our mission is simple: bridge the communication gap between the Deaf/Hard-of-Hearing
+          and the hearing world through AI. We're a humble, passionate team building tech that serves people—and if that
+          speaks to you, we'd love to have you with us.
+        </p>
+
+
+        <!-- second section  -->
+        <p class="applynowHeader">
+          Our Values
+        </p>
+        <div class="ourvaluesflesitems">
+
+          <!-- card  1  -->
+          <div class="whyuscard">
+            <div class="whyuscard-header">
+              <div class="svgholderwhyus">
+
+                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <rect y="0.5" width="32" height="32" fill="url(#pattern0_2355_629)" />
+                  <defs>
+                    <pattern id="pattern0_2355_629" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_2355_629" transform="scale(0.0111111)" />
+                    </pattern>
+                    <image id="image0_2355_629" width="90" height="90" preserveAspectRatio="none"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEJ0lEQVR4nO3cW6gWRQAH8FErTZTKogsVlARd0bKih3rooZeCgoiIIoouhD1EL5UPFVoPZjciMiKIokQIH6LbW9CF7hDZQ2VpahBlGRZqebrpLwZHOsQ5n9+357vM7s4PDhzOZXb3/+3OzM7MbghFURRFURRFURRFURRFFjAXN+EVbMIYtmEtHsKCLspYiIfxWfrfsVRWLPNGzAlthWlYjJ90tgcv4sgJyjgKa9LfdPIjbgltg1lYvZ9wJgrrzHFlnJV+1otVmBladCavVs0vOAfnpu+rWBXaALeamh/S11Q0uxrBnAqX+yDEdmFuaCrcLB83hKbCq/LxcmgqbJaPjaGpsEs+doWmwm/ysSM0lbyqjk2hqewde8jFS6GpcJd83BGaCifJx/zQZHh31AnjrdB0uHzUKeOy0JLRu7dHGHK8oqaFNsAZ+HsEIcdtLgxtgidHEPRjoaVzheuGGPKXrZ07xMnYPoSQd+K00Ga4aghBXzvq48wClg0w5GWjPr6s4NEBhLxy1MeVHUzHC30M+fnW9Jd7hRl4pg8hx/UbB/S8A21i753jVKqRlfHqGPVx1Abu6WKp13jxb+8e9X7XEq7A712EHBc1XhPqJNZtuARP46s0z7cdn+MpXDjMSxOL8F2HkOPvFoW6wOlYgS1dnEHfYAkOHdK+HYOPJ9iPT3F8yB2OS4HFs7WKX/EIThjCvh6ctrU1fcXvZ4VcpR2+Eq/1cahydyrvotBm6WbgglTvxgGWQVobV2vGDzS0Rap34zjCt0azYnMFjg1NJw9/pscfzgtNJT+f4LrG3R7L16bU25kXmkD+dqYG+tRQZ+pjN97ApbUc2lRPX+N2zA51od62pnq87/1xnIgHsCH1iuKQwn2Vt6UZ3uxH2Omm7eJ0Bxurqol8UGlbmmPJFAKeF5foprN2MJO5muOLCscen7B9tsJzMxvaHPSuHp4xv36SIdVujbU56PX7Oc75eBA/92Fb69oc9NJJGrc4E/R6h8atit7nHTXD++N7Ajgcd8YHMgewrXdwUJuC/if1cZfuCzm9OuK5NBHbb7HM5ZVCrnnQw7InDeFO7cGhoe1uPX2E86cUcAm6o/VpzrR/g1d6swNPpLnF+AKT2WlNxf34Xv3Frt9tOLBvAfcY9MY0eHNYh3KmxxnuNE7QyzKtHMRBo8cHugZlPzvwXrqEZlR4+nVFGl1rfkPXZSj/90dag7ygD2XPTB9UHLDPzYd9a+i6DGOfLWnZwRED2s4p6Syv+oq0fBu6LgOIXZirB9IATP5I2+L06spmNHS5w9lp4rWbZbf5NnR1gUPSErGqCylH29DVkb199BjQX7Vp6OoMR6e+++bsG7om8N+N0Jo0YjeRbelDacdbcgctzZIsT2fuWHqs495Yxw9840VRFEVRFEVRFEVRFKF9/gUe6Oh30lPDPwAAAABJRU5ErkJggg==" />
+                  </defs>
+                </svg>
+
+
+              </div>
+              <span class="itmTitle">Empathy First</span>
+            </div>
+            <div class="whyuscardbody">
+              We build with empathy, guided by voices often unheard.
+            </div>
+          </div>
+
+          <!-- card  2  -->
+          <div class="whyuscard">
+            <div class="whyuscard-header">
+              <div class="svgholderwhyus">
+                <svg width="30" height="36" viewBox="0 0 30 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <rect y="0.5" width="30" height="35" fill="url(#pattern0_2355_636)" />
+                  <defs>
+                    <pattern id="pattern0_2355_636" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_2355_636" transform="matrix(0.0111111 0 0 0.00952381 0 0.0714286)" />
+                    </pattern>
+                    <image id="image0_2355_636" width="90" height="90" preserveAspectRatio="none"
+                      xlink:href="data:image/png;base64,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" />
+                  </defs>
+                </svg>
+
+
+              </div>
+              <span class="itmTitle">Mission Driven</span>
+            </div>
+            <div class="whyuscardbody">
+              We're driven by purpose, not routine—what we build matters.
+            </div>
+          </div>
+
+
+          <!-- card  3  -->
+          <div class="whyuscard">
+            <div class="whyuscard-header">
+              <div class="svgholderwhyus">
+                <svg width="29" height="38" viewBox="0 0 29 38" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <rect y="0.5" width="29" height="37" fill="url(#pattern0_2355_643)" />
+                  <defs>
+                    <pattern id="pattern0_2355_643" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_2355_643" transform="matrix(0.0111111 0 0 0.00870871 0 0.108108)" />
+                    </pattern>
+                    <image id="image0_2355_643" width="90" height="90" preserveAspectRatio="none"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEeUlEQVR4nO3cX4hVRRzA8Z8KVmpBRgQFQRJhUBalm6JiGj0FQWAZBT351EO9mBYi3nqyKNB8kvyzahH9wWDLIoqCsGiVisBKK7IwhNCyNmzX1PuNH3eCw3L33nPOzrkz53fnAwvC3js78/MwZ85vfmdEkiRJkiRJkiRJknoCLgFuAe4H1gODwH7gIPAL8EPoPtYOMBO4C3gK2Af8DDTp7FjofkcPmAYsBZ4BDgD/UtzB0OOIeSpYCewGTjJ5+0OPKRrAVGA5sBP4C792Sr8DrnTzrd60qrJe+hVwG7ALGKV6K6Xf0FqGvZ5jpeDTzdIvgAXAO/TeBb25inXANcDLPb6C+2cNDUwHHgdGCOtNsQpYAfxEHNaJNcAM4MWA00Q7y8USYCFwhLic1dyIWABMAZ4EzhOfT8QCYBbwBvF6WuoOmAt8S9yWSp0Bd1eQ+PFNs37TpK5opS/HPARCcxybgQGXzNefO4AtntoflLoCVnu66R0H5nXJh+hnJuM+qSNgraf18WinII8Ldtkr+0/gYqkbYA3+bC7wd/Xhp4ztUjfAg56f9AYKPgSVcafUCXAj8Dd+zSrw9y8t0b7uik+VWABzgMeAvcCnwFHg98wcp/8+jX9VBzqOJBKwBPiYcAYqnDr+Aa6oNoL5chIbI8isbSnQ560F295RbRTzdXoDcRjTpVuO/t7qsm95NfO0WyngoQiu5KzjnYLigvwrxQz1Nqrt5zkfj7S+jbl18kKXBdSfRW66KHIl4y6i20MG+SLgG+wbChZkF+hN2NcMfTXrPHcO+3YHC7IL9HvYNwJcHTLIi+kPa4MF2QX6I+z7Xm/2IYOseVzrLgDLggXZBfol7Hs+dJAvA85g23fBq0Pdo7Zl53QDN2iQXaDfwrY1sVQNaT7Wqn2a6o0h0KtKDuAU8TtcZGemUsCeDh3VbanPXeX9RjeXa+HKbPfdmOm22g0SC+BLYDgTzIezwezy3VhpKnWFWEGczutL9GIJcaY+V4s1xOcJsUhrIYjnSo6jLqMqQCNwkLUi6gHpB4QLtibw54oluiPhdp9/bLflT5hg/yaWaJWlDiozwF0TfK7R40CPiBXA9e4p63+f6WvEHT7f6GGgz4qh012+GDe4BTm+1+hRoE+KBcC94wZ2uMB3Gz0I9BGxoE2ZbqFaCKoP9gGpO00qtXmTaquntk+ZKIKpME/9apd6vT3dSmDdf6Avj0rdAc+1Gdhwh8KbQ+4zR7u0qylYX4/d10rdTXCOUdMF9DVgG/CKK0jJeqFLu5rv9uEDsQD4qsTgTwBXdWlXNxd8FMIsEgv08KaCgz+d51QAt5MzWRvEioKvsA0D1+VsV/cgy2qaO10xx0vy+vsPgXuKbOdn3kks8y74KrEmc0X/4aaRr4F3gWfdwdaXl2hz9iTKBuZXM1KDaJ2rUbSUa1PQMts6otjSbgi4KXSfa4nuSzu92b0fRUFinTHx0m7UPb73z+m2VaK1DMwG923gEa3PDt03U2htIgy6g6xmhO5PkiRJkiRJkiSJWPcfT9EDBiMVYCMAAAAASUVORK5CYII=" />
+                  </defs>
+                </svg>
+
+
+              </div>
+              <span class="itmTitle">Initiative Over Instructions</span>
+            </div>
+            <div class="whyuscardbody">
+              We value independent thinking, and creative action—leadership here means ownership, not hierarchy.
+            </div>
+          </div>
+
+          <!-- card  4  -->
+          <div class="whyuscard">
+            <div class="whyuscard-header">
+              <div class="svgholderwhyus">
+                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <rect y="0.5" width="32" height="32" fill="url(#pattern0_2355_650)" />
+                  <defs>
+                    <pattern id="pattern0_2355_650" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_2355_650" transform="scale(0.0111111)" />
+                    </pattern>
+                    <image id="image0_2355_650" width="90" height="90" preserveAspectRatio="none"
+                      xlink:href="data:image/png;base64,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" />
+                  </defs>
+                </svg>
+
+
+              </div>
+              <span class="itmTitle"> Confidently Humble</span>
+            </div>
+            <div class="whyuscardbody">
+              We stay grounded, embrace feedback, and collaborate—because confidence grows strongest with humility.
+            </div>
+          </div>
+
+          <!-- card  5  -->
+          <div class="whyuscard">
+            <div class="whyuscard-header">
+              <div class="svgholderwhyus">
+                <svg width="30" height="36" viewBox="0 0 30 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <rect y="0.5" width="30" height="35" fill="url(#pattern0_2355_657)" />
+                  <defs>
+                    <pattern id="pattern0_2355_657" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_2355_657" transform="matrix(0.0111111 0 0 0.00952381 0 0.0714286)" />
+                    </pattern>
+                    <image id="image0_2355_657" width="90" height="90" preserveAspectRatio="none"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADdklEQVR4nO2cW0sVURSANyRdUHoKuj32EJRSFKZBCT11+yNW/yAKpaegtHrJ6j90ASvpTxSZaL3lY5apGalpfbGYHYg4c2acMzN7zVkfDMg5zD57f27WrL1mzzhnGIZhGIZhGIZhlAewAzgH3AKeA5PAd+C3P+TvCf/dTaAPaCuxi7oBTgJPgHmyMwP0Vj2GoAFOAG/Ix2DV4wgWYBfwAFgzycVJPgyM5xRsMzkJoNvH1LwMJP5QKwP0AIs2k4sPF99McrGSdwLvLFwUDFF2kRdL4VLkyXlTOLvwNaIJixGTnHJZnYuGP2I452sXQYqWVLNOVbj5EEXLhRX4UouqH1GpMzcFSf7PGacdonpyUKI3SBauO+0AL0ISvYlk4anTDtGdkSBEx0gWxp12gNkQRCdIFr467QArVYtuIFlYdtqhYtEpJNdG9GxVolNKFmacdoi2BJQuOoNkYcJph2jfReg8c9oBbhA++iuDRDuIQqfPaQdoa9Ld7qKQi/V2VweAMcJlxNUBsl39y+YvcNxph7AlC6NOO4QveRU45jRD+JKFO04z6JD8XnaxOq2gQ7KkmoecVtAhWTZWdjutoEOyLExOO62gQ/JbCxfFp3B3ZRer0wrhr/hGgS6nGYqXPLbFQpTE4RFbVmfY/wxskx1EsrlF9l34h4pm/T3IFf/UwAf/nfzjz9apCjdIsegvwOcFk2ySa4HN5BIwySVgkgsAOAhcBV4DU8DPgrOLQddKAHv8s3+yVC2LAddKAJeABcpl0LUSQH8THq7MSstJPl+B5AHXSgD7LVyUAPAoYdb9Aob8C0va/XEKGAaWtjiTWytcrEvh4rKLz8CRhHM7gWmTnE70tYSZHCt5g+wlm8mNRcliZDOGMrRxz8JFY0mfYiSlvv1OFLMtJjeQFPeyqPYMojsSLLdWChcH8CNGUEeGNnbHtLFQbO8VAXxsQujoiWljqtjeKwJ4FSNpOEMb92u7z7hZ+DLoZkjKdjTF+V0J6d2Vckahf8Eii5HOBpKnY86VNg+UO5rA8ZtL4ljyeXKPzy7k6PXhYjnhvIdVjys4gH3NeL/ROuaAvVWPq+5l0j/A5arHU/fC/5q0UfU4VABc3GIYmQMuVN1/jTdnb6d8eckq8FjifNX9VoukZ5ILAy/9y6YW/THpP+u3FM4wDMMwDMMwDMOFyz89zjBDoY8/PQAAAABJRU5ErkJggg==" />
+                  </defs>
+                </svg>
+
+
+              </div>
+              <span class="itmTitle"> Build for Impact</span>
+            </div>
+            <div class="whyuscardbody">
+              We measure success by impact, not credit—what matters is creating lasting, meaningful change.
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- third section  -->
+        <p class="applynowHeader">
+          Learning, Together
+        </p>
+        <div class="learntogethersection">
+          <p>
+            We're all growing—professionally and personally. Mistakes are welcomed as part of progress but we don't
+            tolerate:
+          </p>
+          <ul>
+            <li> Elitism, ego and exclusion</li>
+            <li> Performative inclusion without action</li>
+            <li> Disregard for accessibility or the people we serve</li>
+
+
+          </ul>
+        </div>
+
+
+        <!-- fourth section  -->
+        <p class="applynowHeader">
+          Join our Team!
+        </p>
+
+        <div class="formcontainer applynowForm">
+
+          <form class="card-form">
+            <div class="input">
+              <input type="text" class="input-field" value="" required />
+              <label class="input-label">Your name</label>
+            </div>
+            <div class="input">
+              <input type="text" class="input-field" value="" required />
+              <label class="input-label">Your email</label>
+            </div>
+            <div class="input">
+              <input type="text" class="input-field" value="" required />
+              <label class="input-label">Upload Resume</label>
+            </div>
+            <div class="input">
+              <input type="text" class="input-field" value="" required />
+              <label class="input-label">Role of Interest</label>
+            </div>
+
+
+            <div class="input">
+              <input type="text" class="input-field" value="" required />
+              <label class="input-label ">Message</label>
+            </div>
+
+
+            <div class="sendmesegbutton">
+              <button class="action-button"><span>Apply</span>
+                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.66663 6H13.3333M13.3333 6L8.33329 1M13.3333 6L8.33329 11" stroke="#FCFCFC"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- footer  -->
+  <footer>
+    <div class="footerBigText">
+      Connect <br /> with Us
+    </div>
+
+    <div class="footerleftlinks">
+      <p>General Inquiries </p>
+      <p>Pilot ChatSign in your Organisation </p>
+      <p>Getting Started with ChatSign </p>
+      <p>Existing Customers and Support </p>
+      <p>Investor Relations </p>
+    </div>
+
+    <div class="footerdivider"></div>
+
+    <div class="footerrightlinks">
+      <p>info@chatsign.ai</p>
+      <p>partners@chatsign.ai</p>
+      <p>customer@chatsign.ai</p>
+      <p>sales@chatsign.ai</p>
+      <p>investors@chatsign.ai</p>
+
+    </div>
+
+    <div class="footerleftlogo" id="footerx">
+      <img src="images/logo/logo.png" alt="logo" />
+      <div class="footerlinksocials">
+        <div class="instaholder">
+          <a href="https://www.instagram.com/chatsign_technology?igsh=MXN4cGE4YnNpMGVrNg==" target="_blank"
+            rel="noopener noreferrer">
+
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.574219" y="1.44434" width="34" height="34" rx="17" stroke="#0D0D0D" />
+              <path
+                d="M23.5799 27.1148C24.81 26.6395 25.7824 25.6671 26.2577 24.437C26.4826 23.8544 26.6401 23.1895 26.6829 22.2171C26.693 21.9893 26.7009 21.7981 26.7082 21.6063V15.109C26.7031 14.9734 26.6975 14.8323 26.6902 14.6737C26.6474 13.7012 26.49 13.033 26.265 12.4537C26.0327 11.839 25.675 11.2884 25.207 10.8311C24.7492 10.366 24.1952 10.0049 23.5872 9.77652C23.0045 9.55154 22.3397 9.39406 21.3673 9.35132C20.3875 9.30463 20.0765 9.29395 17.5922 9.29395C15.1079 9.29395 14.7963 9.30463 13.8205 9.34738C12.848 9.39012 12.1798 9.54761 11.6005 9.77258C10.9858 10.0049 10.4352 10.3626 9.97733 10.8311C9.51275 11.2889 9.15167 11.8429 8.92276 12.4504C8.69778 13.033 8.5403 13.6978 8.49755 14.6703C8.45087 15.6501 8.44019 15.9611 8.44019 18.4459C8.44019 20.9308 8.45087 21.2418 8.49362 22.2177C8.53636 23.1901 8.69384 23.8589 8.91938 24.4376C9.15167 25.0523 9.51275 25.603 9.97733 26.0608C10.4352 26.5254 10.9892 26.887 11.5972 27.1154C12.1798 27.3403 12.8446 27.4978 13.8171 27.5406C14.7929 27.5839 15.104 27.5946 17.5888 27.5946C20.0737 27.5946 20.3841 27.5839 21.3605 27.5406C22.333 27.4978 23.0006 27.3398 23.5799 27.1148ZM17.5956 25.9494C15.1535 25.9494 14.8604 25.9387 13.8987 25.896C13.0049 25.8566 12.5224 25.7065 12.2006 25.5816C11.8041 25.4348 11.443 25.2025 11.1495 24.8988C10.8457 24.6018 10.6129 24.2447 10.4667 23.8476C10.3418 23.5259 10.1916 23.0394 10.1522 22.1496C10.1095 21.1845 10.0988 20.8948 10.0988 18.4527C10.0988 16.0106 10.1095 15.7176 10.1522 14.7563C10.1916 13.8626 10.3418 13.3801 10.4667 13.0583C10.6134 12.6613 10.8457 12.3002 11.1534 12.0071C11.4498 11.7034 11.8075 11.4711 12.204 11.3243C12.5257 11.1995 13.0122 11.0493 13.902 11.0099C14.8672 10.9672 15.1568 10.9565 17.5984 10.9565C20.0399 10.9565 20.3335 10.9672 21.2953 11.0099C22.189 11.0493 22.6716 11.1995 22.9933 11.3243C23.3898 11.4711 23.7509 11.7034 24.0439 12.0071C24.3476 12.3041 24.5805 12.6613 24.7267 13.0583C24.8516 13.3801 25.0017 13.866 25.0411 14.7563C25.0839 15.7215 25.0946 16.0111 25.0946 18.4527C25.0946 20.8942 25.0839 21.1805 25.0411 22.1457C25.0017 23.0394 24.8516 23.5219 24.7267 23.8437C24.4191 24.6412 23.7863 25.2739 22.9893 25.581C22.6676 25.7059 22.1817 25.8561 21.2913 25.8954C20.3262 25.9382 20.0371 25.9494 17.5956 25.9494Z"
+                fill="#0D0D0D" />
+              <path
+                d="M17.5924 13.744C14.9967 13.744 12.891 15.8498 12.891 18.4454C12.891 21.0411 14.9967 23.1468 17.5924 23.1468C20.188 23.1468 22.2932 21.0411 22.2932 18.4454C22.2932 15.8498 20.1875 13.744 17.5924 13.744ZM17.5924 21.4944C15.9084 21.4944 14.5428 20.1288 14.5428 18.4449C14.5428 16.7609 15.9084 15.3953 17.5924 15.3953C19.2763 15.3953 20.6419 16.7609 20.6419 18.4449C20.6419 20.1288 19.2763 21.4944 17.5924 21.4944Z"
+                fill="#0D0D0D" />
+              <path
+                d="M23.5755 13.5581C23.5755 12.9518 23.0839 12.4608 22.4776 12.4608C21.8713 12.4608 21.3803 12.9524 21.3803 13.5581C21.3803 14.1639 21.8719 14.6554 22.4776 14.6554C23.0834 14.6554 23.5755 14.1644 23.5755 13.5581Z"
+                fill="#0D0D0D" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="twitterholder">
+          <a href="https://x.com/ChatSign_Tech" target="_blank" rel="noopener noreferrer">
+
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.537109" y="1.44434" width="34" height="34" rx="17" stroke="#0D0D0D" />
+              <g clip-path="url(#clip0_15_7874)">
+                <path
+                  d="M18.9644 17.2965L24.5447 10.9443H23.2228L18.3754 16.4587L14.5066 10.9443H10.0433L15.8949 19.2839L10.0433 25.9443H11.3652L16.4809 20.1197L20.5675 25.9443H25.0308M11.8423 11.9205H13.8731L23.2218 25.0161H21.1905"
+                  fill="#0D0D0D" />
+              </g>
+              <defs>
+                <clipPath id="clip0_15_7874">
+                  <rect width="14.9875" height="15" fill="white" transform="translate(10.0433 10.9443)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+
+        </div>
+
+        <div class="linkedinholder">
+          <a href="https://www.linkedin.com/company/chatsign-technology/ " target="_blank" rel="noopener noreferrer">
+
+            <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.5" y="1.44434" width="34" height="34" rx="17" stroke="#0D0D0D" />
+              <path
+                d="M13.4322 25.5722V15.9536H10.238V25.5722H13.4322ZM11.8357 14.6406C12.9494 14.6406 13.6427 13.902 13.6427 12.9789C13.6219 12.0349 12.9494 11.3169 11.8569 11.3169C10.7637 11.3169 10.0497 12.0349 10.0497 12.9789C10.0497 13.9019 10.7428 14.6405 11.8148 14.6405L11.8357 14.6406ZM15.2002 25.5722H18.3942V20.2013C18.3942 19.9142 18.4151 19.6264 18.4994 19.4213C18.7302 18.8467 19.2558 18.2519 20.1384 18.2519C21.2939 18.2519 21.7565 19.1339 21.7565 20.427V25.5722H24.9504V20.0572C24.9504 17.1029 23.3748 15.7281 21.2733 15.7281C19.5503 15.7281 18.7936 16.6919 18.3732 17.3484H18.3945V15.9539H15.2004C15.2421 16.8563 15.2002 25.5722 15.2002 25.5722Z"
+                fill="#0D0D0D" />
+            </svg>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+
+
+  </footer>
+
+
+
+
+
+
+  <!-- javascript scripts  -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/chatscript.js"></script>
+
+
+
+</body>
+
+</html>
