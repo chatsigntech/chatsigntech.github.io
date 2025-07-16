@@ -40,7 +40,12 @@ document.addEventListener("DOMContentLoaded", function () {
       // collect form data
       const fd = new FormData(form);
       const name = fd.get('name');
-      const subject = `New message from: ${name}`;
+      var subject = `New message from: ${name}`;
+      const checkIfapp = fd.get('resume') ? 'Yes' : 'No';
+      if (checkIfapp === 'Yes') {
+        subject = `New application from: ${name}`;
+      }
+
       fd.append('subject', subject);
       fd.append('replyto', fd.get('email'));
 

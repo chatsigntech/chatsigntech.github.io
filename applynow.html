@@ -268,34 +268,48 @@
 
         <div class="formcontainer applynowForm">
 
-          <form class="card-form">
+          <form id="contact-form" class="card-form">
+
+            <!-- web3 form specifics  -->
+            <input type="hidden" name="access_key" value="c6eca69b-1742-417d-81ab-677056960237" />
+            <!-- <input type="hidden" name="access_key" value="d324d992-7865-48bb-883c-ab495dd66832" /> -->
+
+            <input type="hidden" name="from_name" value="ChatSign Applicant" />
+
+            <!-- user form  -->
             <div class="input">
-              <input type="text" class="input-field" value="" required />
+              <input type="text" name="name" class="input-field" value="" required />
               <label class="input-label">Your name</label>
             </div>
             <div class="input">
-              <input type="text" class="input-field" value="" required />
+              <input type="email" name="email" class="input-field" value="" required />
               <label class="input-label">Your email</label>
             </div>
             <div class="input">
-              <input type="text" class="input-field" value="" required />
-              <label class="input-label">Upload Resume</label>
+              <input type="text" name="resume" class="input-field" value="" required />
+              <label class="input-label">Link to Resume (eg. Shared Drive link)</label>
             </div>
             <div class="input">
-              <input type="text" class="input-field" value="" required />
+              <input type="text" name="portfolio" class="input-field" value="" required />
+              <label class="input-label ">Personal website or LinkedIn</label>
+            </div>
+            <div class="input">
+              <input type="text" name="position" class="input-field" value="" required />
               <label class="input-label">Role of Interest</label>
             </div>
-
-
             <div class="input">
-              <input type="text" class="input-field" value="" required />
-              <label class="input-label ">Message</label>
+              <input type="text" name="message" class="input-field" value="" required />
+              <label class="input-label ">Your short message to us</label>
+            </div>
+            <br />
+            <div class="alignitcenter">
+              <div class="h-captcha" data-captcha="true"></div>
             </div>
 
-
             <div class="sendmesegbutton">
-              <button class="action-button"><span>Apply</span>
-                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <button type="submit" class="action-button"><span>Apply</span>
+                <svg class="btn-icon" width="15" height="12" viewBox="0 0 15 12" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path d="M1.66663 6H13.3333M13.3333 6L8.33329 1M13.3333 6L8.33329 11" stroke="#FCFCFC"
                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
@@ -316,6 +330,21 @@
   </div>
 
 
+  <!-- dialogs  -->
+  <dialog id="success-dialog">
+    <p>✅ Your message was sent successfully!</p>
+    <div class="alignflexend">
+      <button id="success-close">Close</button>
+    </div>
+  </dialog>
+
+  <dialog id="error-dialog">
+    <p id="error-text">❌ Failed to send message.</p>
+    <div class="alignflexend">
+      <button id="error-close">Close</button>
+    </div>
+
+  </dialog>
 
 
 
@@ -416,7 +445,10 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+
   <script src="js/chatscript.js"></script>
+  <script src="js/contactus.js"></script>
 
 
 

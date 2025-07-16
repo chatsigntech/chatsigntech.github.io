@@ -1006,7 +1006,11 @@ dialog button:focus-visible {
 .svgicongetstartbtn {
   border: 2px solid #fcfcfc;
 }
-
+.alignitcenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .faqbg {
   background: url('../images/faqbg.jpg') no-repeat;
   background-size: cover;
@@ -1290,7 +1294,7 @@ dialog button:focus-visible {
   margin: 0 auto;
 }
 .applynowForm .card-form .input {
-  padding-top: 40px;
+  padding-top: 30px;
 }
 .applynowForm .card-form label {
   display: block;
