@@ -118,7 +118,9 @@
                   <p>Address</p>
                 </div>
                 <div class="lowerpartCont">
-                  <p>CHATSIGN TECHNOLOGY LTD <br/>3801-C1.D004, 38th Floor, Tamouh <br/> Addax Port Office Tower <br/> Al Reem Island, Abu Dhabi, United Arab Emirates</p>
+                  <p>CHATSIGN TECHNOLOGY LTD <br />3801-C1.D004, 38th Floor, Tamouh <br /> Addax Port Office Tower
+                    <br /> Al Reem Island, Abu Dhabi, United Arab Emirates
+                  </p>
                 </div>
               </div>
 
@@ -150,24 +152,34 @@
 
             <div class="formcontainer">
 
-              <form class="card-form">
+              <form id="contact-form" class="card-form">
+
+                <!-- web3 form specifics  -->
+                <input type="hidden" name="access_key" value="c894f6e1-1a2a-4b7d-a980-5dbbde3c52ee" />
+                <input type="hidden" name="from_name" value="ChatSign Form" />
+
+                <!-- user form  -->
                 <div class="input">
-                  <input type="text" class="input-field" value="" required />
+                  <input type="text" name="name" class="input-field" value="" required />
                   <label class="input-label">Your name</label>
                 </div>
                 <div class="input">
-                  <input type="text" class="input-field" value="" required />
+                  <input type="email" name="email" class="input-field" value="" required />
                   <label class="input-label">Your email</label>
                 </div>
 
                 <div class="input">
-                  <textarea class="input-field" rows="4" required></textarea>
+                  <textarea name="message" class="input-field" rows="4" required></textarea>
                   <label class="input-label labelcolor">Message</label>
                 </div>
+                <br />
+                <div class="h-captcha" data-captcha="true"></div>
+
 
                 <div class="sendmesegbutton">
-                  <button class="action-button"><span>Send Message</span>
-                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <button type="submit" class="action-button"><span>Send Message</span>
+                    <svg class="btn-icon" width="15" height="12" viewBox="0 0 15 12" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path d="M1.66663 6H13.3333M13.3333 6L8.33329 1M13.3333 6L8.33329 11" stroke="#FCFCFC"
                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
@@ -185,6 +197,21 @@
     </div>
   </div>
 
+  <!-- dialogs  -->
+  <dialog id="success-dialog">
+    <p>✅ Your message was sent successfully!</p>
+    <div class="alignflexend">
+      <button id="success-close">Close</button>
+    </div>
+  </dialog>
+
+  <dialog id="error-dialog">
+    <p id="error-text">❌ Failed to send message.</p>
+    <div class="alignflexend">
+      <button id="error-close">Close</button>
+    </div>
+
+  </dialog>
 
 
 
@@ -286,7 +313,9 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
   <script src="js/chatscript.js"></script>
+  <script src="js/contactus.js"></script>
 
 
 
