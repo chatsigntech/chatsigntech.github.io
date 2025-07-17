@@ -58,6 +58,31 @@ button {
 .colorwhite {
   color: white;
 }
+#header nav div button {
+  color: white;
+  padding: 4px 8px 5px;
+  border-width: 2px;
+}
+#header nav div button:focus {
+  box-shadow: 0 0 0 1px;
+}
+#header nav div button span {
+  width: 1.3rem;
+  height: 1rem;
+  background-image: linear-gradient(white 3px, transparent 3px), linear-gradient(white 3px, transparent 3px), linear-gradient(white 3px, transparent 3px);
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-position: 0 0, 0 6px, 0 12px;
+}
+#header nav div button {
+  border-color: white;
+}
+.colorwhite:hover {
+  color: rgb(196, 213, 181);
+}
+.colorwhite:focus {
+  color: white;
+}
 .givesomepaddingtopandbottom {
   padding-top: 18px;
   padding-bottom: 20px;
@@ -80,6 +105,11 @@ button {
 .navbar-nav .nav-link.active {
   color: rgb(118, 226, 250);
 }
+@media (max-width: 820px) {
+  body {
+    /* background-color: blue; */
+  }
+}
 
 /* sections  */
 section {
@@ -95,8 +125,20 @@ section {
   font-size: 42px;
   text-align: center;
 }
+.section-header p.alignleft {
+  text-align: left;
+}
 .sectionContent {
   padding-top: 80px;
+}
+@media (max-width: 820px) {
+  .sectionContent {
+    padding-top: 58px;
+  }
+  .section-header p {
+    font-size: 32px;
+    text-align: center !important;
+  }
 }
 
 /* hero section  */
@@ -114,6 +156,11 @@ section {
   background-size: cover;
   background-image: url('../images/bg.jpg');
 }
+@media (max-width: 820px) {
+  #hero-banner {
+    max-height: 300px;
+  }
+}
 #hero-banner::before {
   content: '';
   position: absolute;
@@ -130,10 +177,14 @@ section {
   max-width: 1100px;
 }
 #hero-banner h1 {
-  font-size: 68px;
   font-weight: bold;
   line-height: 1.3;
   margin-bottom: 38px;
+}
+@media (min-width: 820px) {
+  #hero-banner h1 {
+    font-size: 68px;
+  }
 }
 #hero-banner p {
   font-size: 18px;
@@ -161,6 +212,16 @@ section {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
+}
+@media (max-width: 820px) {
+  .productDesc {
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+  .listofprods {
+    margin-top: 12px;
+    display: block;
+  }
 }
 .swiper-wrapper {
   min-height: 200px;
@@ -205,6 +266,12 @@ section {
   align-items: center;
   gap: 16px;
   transition: all 0.3s ease;
+}
+@media (max-width: 820px) {
+  .productcard {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
 }
 .swiperprodcard {
   width: 100%;
@@ -298,7 +365,11 @@ section {
 .sectionchangemargintop {
   margin-top: 4rem;
 }
-
+@media (max-width: 820px) {
+  .sectionchangemargintop {
+    margin-top: 1rem;
+  }
+}
 /* section 4, about us  */
 .leftrightdflex {
   margin-top: 3rem;
@@ -306,7 +377,6 @@ section {
   justify-content: space-between;
   align-items: center;
 }
-
 .leftrightdflex img {
   min-width: 200px;
   width: 48%;
@@ -321,6 +391,24 @@ section {
   gap: 30px;
   align-items: center;
 }
+@media (max-width: 820px) {
+  .leftrightdflex {
+    display: block;
+    margin-top: 1rem;
+  }
+  .leftrightdflex img {
+    width: 100%;
+    margin-bottom: 28px;
+  }
+  .rightitems,
+  .leftitems {
+    width: 100%;
+  }
+  .rightitems {
+    gap: 1px;
+  }
+}
+
 .leftItemsContact {
   width: 58%;
   min-width: 200px;
@@ -397,6 +485,12 @@ section {
   border-radius: 20px;
 }
 
+@media (max-width: 820px) {
+  .missionandvisiondiv {
+    margin-bottom: 12px;
+  }
+}
+
 .missiontext {
   font-weight: 500;
   font-size: 28px;
@@ -430,6 +524,15 @@ section {
   padding-bottom: 16px;
   margin-bottom: 20px;
   border-bottom: 1px solid rgb(224, 223, 223);
+}
+@media (max-width: 820px) {
+  .tuncatedline {
+    border-bottom: none;
+    margin-bottom: 0px;
+  }
+  .givemediamargintop {
+    margin-top: 30px;
+  }
 }
 
 .whyuscontainer {
@@ -515,7 +618,18 @@ section {
   gap: 18px;
   min-width: 300px;
 }
-
+@media (max-width: 820px) {
+  .ourteamlist {
+    margin-top: 1rem;
+    display: block;
+  }
+  .ourteamcard,
+  .ourteamcard3,
+  .ourteamcard2 {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
 .ourteamtitle {
   color: #0d0d0d;
   font-weight: 500;
@@ -639,7 +753,6 @@ section {
   color: #0d0d0d;
   margin-bottom: 48px;
 }
-
 .upperpartCont {
   display: flex;
   align-items: center;
@@ -690,10 +803,30 @@ section {
 .labelcolor {
   color: #3328bf !important;
 }
+@media (max-width: 820px) {
+  .finalwordsfromteam {
+    margin-top: 2.5rem;
+    margin-bottom: 0px;
+    display: block;
+    padding: 0px;
+  }
+  .finalwordsleftText,
+  .finalwordsrightText {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .finalwordsleftText {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
 
 /* footer css  */
-
 footer {
+  background: #f9f9fb;
+}
+
+.footercontainer {
   margin-top: 8rem;
   display: flex;
   flex-direction: row;
@@ -701,7 +834,17 @@ footer {
   align-items: center;
   padding: 4rem 0px;
   gap: 4%;
-  background: #f9f9fb;
+}
+.footerBigText span {
+  display: block;
+}
+@media (max-width: 820px) {
+  .footercontainer {
+    display: block;
+  }
+  .footerBigText span {
+    display: inline;
+  }
 }
 .footerBigText {
   font-family: 'Plus Jakarta Sans';
@@ -711,6 +854,17 @@ footer {
   line-height: 60px;
   color: #0d0d0d;
   text-align: center;
+}
+@media (max-width: 820px) {
+  .footerBigText {
+    text-align: left;
+    font-size: 2.5rem;
+  }
+  .footerleftlinks {
+    margin: 28px 0px;
+    border-top: 2px solid #a1a1a1;
+    padding-top: 28px;
+  }
 }
 .footerleftlinks {
   font-family: 'Plus Jakarta Sans';
@@ -725,6 +879,12 @@ footer {
 .footerdivider {
   height: 250px;
   border: 1px solid #a1a1a1;
+}
+@media (max-width: 820px) {
+  .footerdivider {
+    height: 1px;
+    margin: 28px 0px;
+  }
 }
 .footerleftlogo {
   display: flex;
@@ -743,12 +903,6 @@ footer {
   gap: 15px;
 }
 
-/* .footerrightlinks {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-} */
 .footerrightlinks p {
   font-family: 'Plus Jakarta Sans';
   font-style: normal;
@@ -757,7 +911,13 @@ footer {
   line-height: 44px;
   color: #808080;
 }
-
+@media (max-width: 820px) {
+  .footerrightlinks {
+    margin: 28px 0px;
+    border-bottom: 2px solid #a1a1a1;
+    padding-bottom: 28px;
+  }
+}
 .displayinvs {
   visibility: hidden;
 }
@@ -776,6 +936,13 @@ footer {
   border-radius: 12px;
   margin-top: 2.8rem;
   margin-bottom: 2.8rem;
+}
+@media (max-width: 820px) {
+  .ourservicesprodcardholder .serviceImg {
+    width: 100%;
+    margin-top: 0.8rem;
+    margin-bottom: 1.8rem;
+  }
 }
 .ourservicesprodcardholder .productcard {
   width: 70%;
