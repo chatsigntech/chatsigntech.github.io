@@ -393,9 +393,10 @@
             <span class="tooltip-text">Click to read more</span>
             <img src="${item.img}" alt="${item.title}">
             <div class="cardcontent">
-              <p class="itmidicator">News</p>
+            ${(window.innerWidth > 820) ? '<p class="itmidicator">News</p>' : ''}
               <p class="itmTitle">${item.title}</p>
               <p class="itmDescrption">${item.snippet}</p>
+              ${(window.innerWidth < 820) ? '<p class="itmidicator">Read More</p>' : ''}
             </div>
           </div>
         `;
@@ -404,14 +405,36 @@
 
 
       // swiper 
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
-        spaceBetween: 50,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+      var swiper;
+
+      function initOrDestroySwiper() {
+        if (window.innerWidth > 820) {
+          if (!swiper) {
+            swiper = new Swiper(".mySwiper", {
+              slidesPerView: 2,
+              spaceBetween: 50,
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          }
+        } else {
+          if (swiper) {
+            swiper.destroy(true, true);
+            swiper = undefined;
+          }
         }
-      });
+      }
+      const reinitswier = () => {
+        setTimeout(() => {
+          initOrDestroySwiper();
+        }, 500);
+      }
+      document.addEventListener("DOMContentLoaded", initOrDestroySwiper);
+      reinitswier();
+      window.addEventListener("resize", initOrDestroySwiper);
+
 
       // populate details 
       const newsSection = document.getElementById("newsSection");
@@ -430,6 +453,8 @@
           <p class="singlenewstips">Posted on: ${item.date}</p>
           <p class="singlenewstips">Relevant Events/Institutions: ${item.relevant}</p>
           <p class="singlenewsdescriptions">${item.fullText}</p>
+          <br />
+          ${window.innerWidth < 820 ? '<p class="itmidicator textaligncentery mobile-back">Go back</p>' : ''}
         `;
 
         newsSection.style.display = 'none';
@@ -439,11 +464,15 @@
 
 
       // go back
-      document.querySelector('.go-back').addEventListener('click', () => {
+      function goBack() {
         newsDetail.style.display = 'none';
         newsSection.style.display = 'block';
-        window.scrollTo({ top: 130, behavior: 'smooth' });
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+      document.getElementById('newsDetail').addEventListener('click', e => {
+        if (e.target.closest('.mobile-back')) goBack();
       });
+      document.querySelector('.go-back').addEventListener('click', goBack);
 
       // for tooltip
       document.addEventListener('mouseover', e => {
