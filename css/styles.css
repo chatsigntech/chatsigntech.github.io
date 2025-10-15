@@ -1472,6 +1472,19 @@ dialog button:focus-visible {
 .givesomemarginbottomfaq {
   margin-bottom: 2rem;
 }
+.demoVideoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+.videoHolderdemo iframe {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  overflow: hidden;              /* clips iframe corners */
+
+}
 
 /* news page  */
 .newsheader {
