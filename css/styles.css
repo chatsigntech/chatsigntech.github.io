@@ -1478,13 +1478,25 @@ dialog button:focus-visible {
   justify-content: center;
   margin: 2rem auto;
 }
-
-.videoHolderdemo iframe {
+.videoHolderdemo {
+  width: 100%;
+  max-width: 600px;
+  max-height: 600px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.2);
   border-radius: 12px;
-  overflow: hidden;              /* clips iframe corners */
-
+  overflow: hidden;
 }
+.videoHolderdemo iframe {
+  aspect-ratio: 1 / 1;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  overflow: hidden;              
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  border: 0; 
+}
+
 
 /* news page  */
 .newsheader {
