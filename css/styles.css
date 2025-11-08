@@ -613,9 +613,58 @@ section {
   transition: all 0.4s ease;
   pointer-events: none;
 }
+.keepitcenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .buttondiv {
   margin-top: 28px;
   cursor: pointer;
+}
+.buttondiv2 {
+  margin-top: 20px;
+  cursor: pointer;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.buttondiv2 .btnholderCont {
+  display: inline-block;
+  padding: 1.5px;
+  background: linear-gradient(270deg, #00b57c 2.62%, #3e44a4 99.62%);
+  border-radius: 8px;
+}
+
+.buttondiv2 button {
+  /* Buttons/Button */
+
+  box-sizing: border-box;
+  padding: 5px 24px 6px;
+  background: #ffffff;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.2);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.buttondiv2 button:hover {
+  background: transparent;
+}
+.buttondiv2 button span {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  background: linear-gradient(90deg, #00b57c 0%, #3e44a4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all 0.3s ease;
+  text-fill-color: transparent;
+}
+.buttondiv2 button:hover span {
+  -webkit-text-fill-color: #ffffff;
+  text-fill-color: #ffffff;
 }
 .buttondiv:hover .gradfill {
   -webkit-transform: translateX(100px);
@@ -1482,21 +1531,20 @@ dialog button:focus-visible {
   width: 100%;
   max-width: 600px;
   max-height: 600px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
   overflow: hidden;
 }
 .videoHolderdemo iframe {
   aspect-ratio: 1 / 1;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
-  overflow: hidden;              
+  overflow: hidden;
   width: 100%;
   height: auto;
   max-height: 600px;
-  border: 0; 
+  border: 0;
 }
-
 
 /* news page  */
 .newsheader {
@@ -1510,7 +1558,11 @@ dialog button:focus-visible {
   text-align: center;
   margin-bottom: 4rem;
 }
-#newsSection, #seccontact, #secapplynow, #secfaq, #newsDetail {
+#newsSection,
+#seccontact,
+#secapplynow,
+#secfaq,
+#newsDetail {
   padding-top: 4rem;
 }
 

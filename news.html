@@ -167,7 +167,7 @@
               <a href="index.html#prod5" class="footerlinks">SignGlasses</a>
               <a href="index.html#prod6" class="footerlinks">SignCall</a>
             </div>
-              
+
 
           </div>
 
@@ -182,7 +182,7 @@
               <div class="footerleftlinks">
                 <p>General Inquiries </p>
                 <p>Pilot in your Organisation </p>
-                <p>Getting Started  </p>
+                <p>Getting Started </p>
                 <p>Customers Support </p>
                 <p>Investor Relations </p>
               </div>
@@ -400,6 +400,39 @@
           `,
           date: '2025/03/30',
           relevant: 'AIRH2025, NYU Abu Dhabi'
+        },
+        {
+          id: 7,
+          title: 'ChatSign at the AccessAbilities Expo 2025',
+          img: 'images/news/news7.jpg',
+          snippet: 'ChatSign Technology participated in the AccessAbilities Expo, where we had the opportunity to showcase our innovative AI-powered sign language translation solutions.',
+          fullText: `
+
+          Thank you all for visiting our booth at AccessAbilities Expo! <br /><br/>
+
+          Meeting with  people int he field of accessibility is always an inspiring and eye-opening experience; together, we can make the world more inclusive for all! Additionally, we are grateful to have earned a certificate of appreciation, highlighting our commitment to bridge the gap between communication and inclusivity. <br /><br/>
+
+          Please look forward to our updates on our products as we work to make communication easier for the Deaf and Hard of Hearing community!
+
+          `,
+          date: '2025/10/8',
+          relevant: 'AccessAbilities Expo 2025, New York University Abu Dhabi'
+        },
+        {
+          id: 8,
+          title: 'ChatSign at Expand North Star 2025',
+          img: 'images/news/news3.jpg',
+          snippet: 'ChatSign Technology had the honor to exhibit our latest AI sign-language interpretation products and participate in the Supernova Challenge Semifinals.',
+          fullText: `
+            ChatSign Technology had the honor to exhibit our latest AI sign-language interpretation products and participate in the Supernova Challenge Semifinals. 
+            <br /><br/>
+            Expand North Star 2025 served as a pivotal milestone for ChatSign’s global visibility. The event enabled us to showcase our technology to thousands of visitors, strengthen partnerships with key institutions, and establish valuable investor relationships for our upcoming seed round. Our participation also enhanced the company’s brand recognition in the MENA startup ecosystem and positioned ChatSign as a leading deep-tech innovator in accessible AI communication.
+            <br /><br/>
+            We are excited to continue showcasing our products to all audiences, especially those that are Deaf and Hard of Hearing. Stay tuned for more riveting announcements about our products and participation at events!
+
+          `,
+          date: '2025/10/30',
+          relevant: 'NYU Abu Dhabi'
         }
       ];
       // Populate swiper slides dynamically
@@ -475,7 +508,19 @@
           <p class="singlenewstips">Relevant Events/Institutions: ${item.relevant}</p>
           <p class="singlenewsdescriptions">${item.fullText}</p>
           <br />
-          ${window.innerWidth < 820 ? '<p class="itmidicator textaligncentery mobile-back">Go back</p>' : ''}
+          
+          ${window.innerWidth < 820 ? '<p class="itmidicator textaligncentery mobile-back">Go back</p>' : `
+        <div class="buttondiv2 margintop10 keepitcenter">
+          <div class="btnholderCont">
+            <button>
+              <span>
+                Go back
+              </span>
+            </button>
+          </div>
+        </div>
+
+          `}
         `;
 
         newsSection.style.display = 'none';
@@ -494,6 +539,10 @@
         if (e.target.closest('.mobile-back')) goBack();
       });
       document.querySelector('.go-back').addEventListener('click', goBack);
+      // go back for buttondiv
+      detailContent.addEventListener('click', e => {
+        if (e.target.closest('.buttondiv2')) goBack();
+      });
 
       // for tooltip
       document.addEventListener('mouseover', e => {
