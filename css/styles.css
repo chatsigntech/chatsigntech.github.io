@@ -968,7 +968,7 @@ section {
 }
 .finalwordsleftText2 {
   font-weight: 500;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 60px;
   letter-spacing: -0.02em;
   color: #0d0d0d;
@@ -984,7 +984,7 @@ section {
   font-family: 'Plus Jakarta Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 30px;
   color: #00b57c;
 }
@@ -996,7 +996,7 @@ section {
 .lowerpartCont p {
   font-family: 'Plus Jakarta Sans';
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
   line-height: 24px;
   color: #3328bf;
@@ -1754,7 +1754,7 @@ dialog button:focus-visible {
   font-family: 'Gilroy-Bold', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 60px;
   letter-spacing: -0.02em;
   color: #3f42a4;
@@ -1764,7 +1764,7 @@ dialog button:focus-visible {
   font-family: 'Gilroy-Regular', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 23px;
   line-height: 35px;
   text-align: center;
   letter-spacing: 0.03em;
