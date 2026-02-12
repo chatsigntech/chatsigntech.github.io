@@ -1587,6 +1587,24 @@ dialog button:focus-visible {
 #newsSection .productcard:hover {
   box-shadow: rgba(2, 37, 119, 0.163) 0px 1px 2px 0px, rgba(1, 29, 106, 0.234) 0px 1px 0px 2px;
 }
+.news-swiper-shell {
+  position: relative;
+  padding: 0 50px;
+}
+.news-swiper-shell.news-swiper-pending {
+  opacity: 0;
+}
+#newsSwiper {
+  padding-left: 0;
+  padding-right: 0;
+  overflow: hidden;
+}
+.news-swiper-shell .swiper-button-next {
+  right: 0;
+}
+.news-swiper-shell .swiper-button-prev {
+  left: 0;
+}
 
 .tooltip-text {
   position: absolute;
@@ -1706,6 +1724,9 @@ dialog button:focus-visible {
 @media (max-width: 820px) {
   .swiper {
     padding: 0px;
+  }
+  .news-swiper-shell {
+    padding: 0;
   }
   #newsSwiper {
     overflow: visible;

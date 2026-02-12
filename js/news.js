@@ -164,8 +164,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       ];
       // Populate swiper slides dynamically
+      const swiperShell = document.getElementById('newsSwiperShell');
       const swiperWrapper = document.querySelector('#newsSwiper .swiper-wrapper');
-      if (!swiperWrapper) {
+      if (!swiperShell || !swiperWrapper) {
         return;
       }
 
@@ -191,31 +192,38 @@ document.addEventListener("DOMContentLoaded", function () {
       // swiper 
       let swiper;
 
+      const setSwiperReady = () => {
+        swiperShell.classList.remove('news-swiper-pending');
+      };
+
       function initOrDestroySwiper() {
         if (window.innerWidth > 820) {
           if (!swiper) {
-            swiper = new Swiper(".mySwiper", {
+            swiper = new Swiper("#newsSwiper", {
               slidesPerView: 2,
               spaceBetween: 50,
+              roundLengths: true,
               navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: "#newsSwiperShell .swiper-button-next",
+                prevEl: "#newsSwiperShell .swiper-button-prev",
               },
             });
+          } else {
+            swiper.update();
           }
+
+          setSwiperReady();
         } else {
           if (swiper) {
             swiper.destroy(true, true);
             swiper = undefined;
           }
+
+          setSwiperReady();
         }
       }
-      const reinitSwiper = () => {
-        setTimeout(() => {
-          initOrDestroySwiper();
-        }, 500);
-      };
-      reinitSwiper();
+
+      initOrDestroySwiper();
       window.addEventListener("resize", initOrDestroySwiper);
 
 
