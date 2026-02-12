@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       id: 0,
       tag: 'Use Cases',
-      img: 'images/products/stationlite_usecase1.jpg',
+      img: 'images/products/lite/1.jpeg',
       title: 'Inclusiveness in Civil Service Access',
       description: [
         "SignAvatar Station Lite bridges the gap at governmental or civil service counters by interpreting  bureaucratic procedures and  instructions into sign language instantly.",
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       id: 1,
       tag: 'Use Cases',
-      img: 'images/products/stationlite_usecase2.jpg',
+      img: 'images/products/lite/2.jpeg',
       title: 'Clinical Consultations',
       description: [
         "At hospitals and clinics, SignAvatar Station Lite facilitates direct interaction between physicians and DHH patients by interpreting medical diagnoses and treatment plans in real-time.",
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       id: 2,
       tag: 'Use Cases',
-      img: 'images/products/stationlite_usecase3.jpg',
+      img: 'images/products/lite/3.jpeg',
       title: 'Inclusive Hospitality',
       description: [
         "In the fast-paced hospitality industry, diversity drives creativity and excellence. ",
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       id: 3,
       tag: 'Use Cases',
-      img: 'images/products/stationlite_usecase4.jpg',
+      img: 'images/products/lite/4.jpeg',
       title: 'Public Transportation',
       description: [
         "One-on-one interactions at check-in counters and security checkpoints are  time-sensitive.",
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       id: 0,
       tag: 'Use Cases',
-      img: 'images/products/stationpro_usecase1.jpg',
+      img: 'images/products/pro/1.jpeg',
       title: 'Public Announcements',
       description: [
         "At venues of public transportation,  where traffic information  broadcasts in real-time, it is imperative to not miss out on any information.",
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       id: 1,
       tag: 'Use Cases',
-      img: 'images/products/stationpro_usecase2.jpg',
+      img: 'images/products/pro/2.jpeg',
       title: "Customer Service",
       description: ["Customer service shouldn't come with a loading bar. At information desks, our high-speed processing removes the awkward moments of waiting for manual interpretation. ",
         "At receptions of shopping  malls, tax return counters, reception and information counters, SignAvatar Station Pro enables seamless conversation for all customers."
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       id: 2,
       tag: 'Use Cases',
-      img: 'images/products/stationpro_usecase3.jpg',
+      img: 'images/products/pro/3.jpeg',
       title: 'Museums and Exhibitions',
       description: ["SignAvatar Station Pro functions as a standalone unit that adds immediate sign language support to any exhibit.",
         "No matter  being historical, technological, or business conventions, SignAvatar Station Pro provides intuitive and professional interpretations for DHH participants."
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       id: 3,
       tag: 'Use Cases',
-      img: 'images/products/stationpro_usecase4.jpg',
+      img: 'images/products/pro/4.jpeg',
       title: 'Campuses and Events',
       description: ["Designed for modern institutions, SignAvatar Station Pro is the standard for accessible and inclusive education.",
         "Whether in student service centers, lecture halls, or auditoriums, an installation of the Pro model ensures DHH students remain fully informed regarding class cancellations, administrative deadlines, emergency alerts, or complex academic instruction."
@@ -97,6 +97,100 @@ document.addEventListener('DOMContentLoaded', function () {
   ];
 
   // code here
+  function renderUseCaseSlides(wrapperId, items, productName) {
+    const wrapper = document.getElementById(wrapperId);
+    if (!wrapper) {
+      return;
+    }
+
+    wrapper.innerHTML = items.map((item) => {
+      const descriptionHtml = item.description.map((paragraph) => `<p>${paragraph}</p>`).join('');
+
+      return `
+        <div class="swiper-slide usecase-carousel-slide" data-usecase-id="${item.id}">
+          <article class="usecase-frame">
+            <p class="usecase-tag">${item.tag}</p>
+            <h2 class="usecase-product-title">${productName}</h2>
+
+            <div class="usecase-image-holder">
+              <img src="${item.img}" alt="${item.title}">
+            </div>
+
+            <div class="usecase-content-card">
+              <h3 class="usecase-item-title">${item.title}</h3>
+              <div class="usecase-item-description">
+                ${descriptionHtml}
+              </div>
+              <div class="buttondiv margintop20">
+              <a href="contactus.html" class="getstartedbtn reqademobtn"><span class="btntext">Request a Demo</span><div class="gradfill"></div></a> 
+              </div>
+            </div>
+          </article>
+        </div>
+      `;
+    }).join('');
+  }
+
+  function mountUseCaseCarousel(config) {
+    const shell = document.getElementById(config.shellId);
+    const prevBtn = document.getElementById(config.prevId);
+    const nextBtn = document.getElementById(config.nextId);
+
+    if (!shell || !prevBtn || !nextBtn) {
+      return;
+    }
+
+    renderUseCaseSlides(config.wrapperId, config.items, config.productName);
+
+    const swiper = new Swiper(`#${config.swiperId}`, {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      speed: 450,
+      roundLengths: true,
+      allowTouchMove: true
+    });
+
+    const updateButtonState = () => {
+      prevBtn.disabled = swiper.isBeginning;
+      nextBtn.disabled = swiper.isEnd;
+      prevBtn.classList.toggle('is-disabled', swiper.isBeginning);
+      nextBtn.classList.toggle('is-disabled', swiper.isEnd);
+    };
+
+    prevBtn.addEventListener('click', () => {
+      swiper.slidePrev();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      swiper.slideNext();
+    });
+
+    swiper.on('slideChange', updateButtonState);
+    swiper.on('resize', updateButtonState);
+    updateButtonState();
+
+    shell.classList.remove('usecase-carousel-pending');
+  }
+
+  mountUseCaseCarousel({
+    shellId: 'stationLiteUseCasesCarousel',
+    swiperId: 'stationLiteUseCasesSwiper',
+    wrapperId: 'stationLiteUseCasesWrapper',
+    prevId: 'stationLiteUseCasesPrev',
+    nextId: 'stationLiteUseCasesNext',
+    productName: 'SignAvatar Station Lite',
+    items: stationLiteUseCases
+  });
+
+  mountUseCaseCarousel({
+    shellId: 'stationProUseCasesCarousel',
+    swiperId: 'stationProUseCasesSwiper',
+    wrapperId: 'stationProUseCasesWrapper',
+    prevId: 'stationProUseCasesPrev',
+    nextId: 'stationProUseCasesNext',
+    productName: 'SignAvatar Station Pro',
+    items: stationProUseCases
+  });
 
 });
 
