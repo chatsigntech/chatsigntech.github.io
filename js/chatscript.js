@@ -1,20 +1,24 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const navLinks = document.querySelectorAll(".nav-link");
-  navLinks.forEach(link => {
-    link.addEventListener("click", function () {
-      // Remove 'active' from all links
-      navLinks.forEach(item => item.classList.remove("active"));
+document.addEventListener('click', function (event) {
+  const navLink = event.target.closest('.nav-link[data-page]');
 
-      // Add 'active' to the clicked link
-      this.classList.add("active");
-    });
-  });
+  if (!navLink) {
+    return;
+  }
 
-  document.querySelectorAll('a.nav-link[href^="#"]').forEach(link => {
-    link.addEventListener("click", function (e) {
-      e.preventDefault();
-      const sectionId = link.getAttribute("href");
-      window.location.href = "index.html" + sectionId;
-    });
+  // Remove 'active' from all links
+  document.querySelectorAll('.nav-link[data-page]').forEach((item) => item.classList.remove('active'));
+
+  // Add 'active' to the clicked link
+  navLink.classList.add('active');
+});
+
+document.addEventListener('site-layout:ready', function () {
+  const page = window.location.pathname.split('/').pop() || 'index.html';
+  const activePage = ['faq.html', 'news.html', 'contactus.html', 'applynow.html'].includes(page)
+    ? page
+    : 'index.html';
+
+  document.querySelectorAll('#header .nav-link[data-page]').forEach((link) => {
+    link.classList.toggle('active', link.dataset.page === activePage);
   });
 });

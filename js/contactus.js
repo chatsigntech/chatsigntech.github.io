@@ -1,50 +1,72 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', function () {
   // when the page is ready
 
   const form = document.getElementById('contact-form');
+  if (!form) {
+    return;
+  }
+
   const button = form.querySelector('.action-button');
-  const icon = button.querySelector('.btn-icon');
+  const icon = button ? button.querySelector('.btn-icon') : null;
 
   const successDlg = document.getElementById('success-dialog');
   const errorDlg = document.getElementById('error-dialog');
   const errorTxt = document.getElementById('error-text');
 
+  if (!button || !icon || !successDlg || !errorDlg || !errorTxt) {
+    return;
+  }
+
   // helpers
   const showSpinner = () => {
+    if (button.querySelector('.spinner')) {
+      return;
+    }
+
     icon.style.display = 'none';
+
     const spin = document.createElement('span');
     spin.className = 'spinner';
     spin.setAttribute('aria-label', 'Loading');
+
     button.appendChild(spin);
     button.disabled = true;
   };
+
   const hideSpinner = () => {
     const spin = button.querySelector('.spinner');
-    if (spin) spin.remove();
+
+    if (spin) {
+      spin.remove();
+    }
+
     icon.style.display = '';
     button.disabled = false;
   };
 
-  form.addEventListener('submit', async (e) => {
+  const getCaptchaResponse = () => {
+    const captchaInput = form.querySelector('textarea[name="h-captcha-response"]');
+    return captchaInput ? captchaInput.value.trim() : '';
+  };
+
+  form.addEventListener('submit', async function (e) {
     e.preventDefault();
-    const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+
+    const hCaptcha = getCaptchaResponse();
     if (!hCaptcha) {
-      e.preventDefault();
-      errorTxt.textContent = `❌ Complete the CAPTCHA to send.`;
+      errorTxt.textContent = '❌ Complete the CAPTCHA to send.';
       errorDlg.showModal();
       return;
     }
+
     showSpinner();
 
     try {
       // collect form data
       const fd = new FormData(form);
       const name = fd.get('name');
-      var subject = `New message from: ${name}`;
       const checkIfapp = fd.get('resume') ? 'Yes' : 'No';
-      if (checkIfapp === 'Yes') {
-        subject = `New application from: ${name}`;
-      }
+      const subject = checkIfapp === 'Yes' ? `New application from: ${name}` : `New message from: ${name}`;
 
       fd.append('subject', subject);
       fd.append('replyto', fd.get('email'));
@@ -57,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Accept': 'application/json'
+          Accept: 'application/json'
         },
         body: json
       });
@@ -81,7 +103,4 @@ document.addEventListener("DOMContentLoaded", function () {
   // close buttons
   document.getElementById('success-close').onclick = () => successDlg.close();
   document.getElementById('error-close').onclick = () => errorDlg.close();
-
-
-
 });
