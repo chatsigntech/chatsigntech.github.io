@@ -1,3 +1,106 @@
+document.addEventListener('DOMContentLoaded', function () {
+
+  const stationLiteUseCases = [
+    {
+      id: 0,
+      tag: 'Use Cases',
+      img: 'images/products/stationlite_usecase1.jpg',
+      title: 'Inclusiveness in Civil Service Access',
+      description: [
+        "SignAvatar Station Lite bridges the gap at governmental or civil service counters by interpreting  bureaucratic procedures and  instructions into sign language instantly.",
+
+        "When it comes to applying for permits, renewing identification, or handling tax inquiries, an installation of the Lite  model ensures DHH citizens can navigate government systems with full independence and confidence."
+      ]
+
+    },
+    {
+      id: 1,
+      tag: 'Use Cases',
+      img: 'images/products/stationlite_usecase2.jpg',
+      title: 'Clinical Consultations',
+      description: [
+        "At hospitals and clinics, SignAvatar Station Lite facilitates direct interaction between physicians and DHH patients by interpreting medical diagnoses and treatment plans in real-time.",
+        "Importantly, Installation of the Lite model enables patients to discuss sensitive medical conditions privately, without having to rely on a human interpreter."
+      ]
+
+    },
+    {
+      id: 2,
+      tag: 'Use Cases',
+      img: 'images/products/stationlite_usecase3.jpg',
+      title: 'Inclusive Hospitality',
+      description: [
+        "In the fast-paced hospitality industry, diversity drives creativity and excellence. ",
+        "For hospitality establishments, such as restaurants or boutique stores, SignAvatar Station Lite empowers DHH employees to manage guest interactions efficiently. "
+      ]
+
+    },
+    {
+      id: 3,
+      tag: 'Use Cases',
+      img: 'images/products/stationlite_usecase4.jpg',
+      title: 'Public Transportation',
+      description: [
+        "One-on-one interactions at check-in counters and security checkpoints are  time-sensitive.",
+        "SignAvatar Station Lite streamlines the pre-flight experience by interpreting agent instructions and security questions for DHH travelers immediately. Whether verifying travel documents, discussing baggage regulations, or navigating security protocols, installing our Lite model could effectively ensure  clear compliance."
+      ]
+
+    },
+
+
+  ];
+
+  const stationProUseCases = [
+    {
+      id: 0,
+      tag: 'Use Cases',
+      img: 'images/products/stationpro_usecase1.jpg',
+      title: 'Public Announcements',
+      description: [
+        "At venues of public transportation,  where traffic information  broadcasts in real-time, it is imperative to not miss out on any information.",
+        "SignAvatar Station Pro interprets  audio announcements into sign language simultaneously. At airports, subway stations, or railway stations, an installation of the Pro model  ensures DHH passengers are informed with schedule delay, lost-and-found, or instructional announcements."
+
+      ]
+
+    },
+    {
+      id: 1,
+      tag: 'Use Cases',
+      img: 'images/products/stationpro_usecase2.jpg',
+      title: "Customer Service",
+      description: ["Customer service shouldn't come with a loading bar. At information desks, our high-speed processing removes the awkward moments of waiting for manual interpretation. ",
+        "At receptions of shopping  malls, tax return counters, reception and information counters, SignAvatar Station Pro enables seamless conversation for all customers."
+      ]
+
+    },
+    {
+      id: 2,
+      tag: 'Use Cases',
+      img: 'images/products/stationpro_usecase3.jpg',
+      title: 'Museums and Exhibitions',
+      description: ["SignAvatar Station Pro functions as a standalone unit that adds immediate sign language support to any exhibit.",
+        "No matter  being historical, technological, or business conventions, SignAvatar Station Pro provides intuitive and professional interpretations for DHH participants."
+      ]
+
+    },
+    {
+      id: 3,
+      tag: 'Use Cases',
+      img: 'images/products/stationpro_usecase4.jpg',
+      title: 'Campuses and Events',
+      description: ["Designed for modern institutions, SignAvatar Station Pro is the standard for accessible and inclusive education.",
+        "Whether in student service centers, lecture halls, or auditoriums, an installation of the Pro model ensures DHH students remain fully informed regarding class cancellations, administrative deadlines, emergency alerts, or complex academic instruction."
+      ]
+
+    },
+
+  ];
+
+  // code here
+
+});
+
+
 (function () {
   let autoplaying = false;
   let scrollTimer = null;
