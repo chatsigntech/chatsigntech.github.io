@@ -743,12 +743,12 @@ section {
   width: min(100%, 820px);
   margin: 0 auto;
   border-radius: 38px;
-  background: #ededf0;
   padding: 82px 26px 28px;
   position: relative;
   top: -90px;
   z-index: 1;
   margin-bottom: -90px;
+  background: #f9f9fb;
 }
 .usecase-item-title {
   font-family: 'Plus Jakarta Sans';
