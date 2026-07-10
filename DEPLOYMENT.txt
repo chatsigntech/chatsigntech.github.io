@@ -1,0 +1,4 @@
+source=chatsigntech/Chatsign-newSite
+source_commit=606f42e
+build_branch=main
+previous_root_pages_commit=9916fca
