@@ -1,0 +1,14 @@
+CHATSIGN.AI GITHUB PAGES FULL OVERWRITE
+
+This directory is a complete static publishing root for www.chatsign.ai.
+
+Before upload:
+1. Back up the current GitHub Pages publishing root.
+2. Put the intended Web3Forms access key into web3forms-config.js.
+3. Copy the CONTENTS of this directory into the existing publishing root.
+4. Keep GitHub Pages Custom domain = www.chatsign.ai.
+5. Do not change the existing Cloudflare DNS unless intentionally migrating hosts.
+
+CNAME must remain exactly: www.chatsign.ai
+
+See README_DEPLOY_CHATSIGN_AI.md in the source handoff for the full procedure.

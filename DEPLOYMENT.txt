@@ -1,5 +1,6 @@
 source=chatsigntech/Chatsign-newSite
-source_commit=3eea6c9
+source_commit=51ceaaa72b683ea9cba4b996b8ad70f3a5478bf1
 build_branch=main
-build_env=supabase_configured
-previous_root_pages_commit=63ebe95
+build_env=supabase_public_config_preserved
+web3forms_config=not_configured
+previous_pages_commit=8e5897e5444ebea1eea087c3a8bc7542ff828121
